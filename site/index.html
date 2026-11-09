@@ -567,12 +567,12 @@ const PROJ={none:{id:"none",langs:["ar","fr"],lex:[],conv:[],instr:""}};let ME=n
 function proj(){return PROJ[S.project]||PROJ.none}
 function isAdmin(){return true}
 const LSK="smsm.lex.",BASES={};
-function saveLocal(p){try{localStorage.setItem(LSK+p.id,JSON.stringify({lex:p.lex,conv:p.conv,instr:p.instr,at:Date.now()}));p._local=true}catch(e){toast(T("eGeneric"))}}
+function saveLocal(p){try{localStorage.setItem(LSK+p.id,JSON.stringify({lex:p.lex,conv:p.conv,instr:p.instr,iv:(BASES[p.id]||{}).instrVersion||1,at:Date.now()}));p._local=true}catch(e){toast(T("eGeneric"))}}
 let instrTimer=null;function saveInstr(){const p=proj();if(p.id==="none")return;clearTimeout(instrTimer);instrTimer=setTimeout(()=>{saveLocal(p);renderProj();toast(T("savedLocal"))},700)}
 async function loadProjects(){
   try{const base=await (await fetch("data/catechese.json",{cache:"no-cache"})).json();base.id=base.id||"catechese";BASES[base.id]=base;
     const p=JSON.parse(JSON.stringify(base));
-    try{const v=JSON.parse(localStorage.getItem(LSK+p.id)||"null");if(v&&Array.isArray(v.lex)){p.lex=v.lex;if(Array.isArray(v.conv))p.conv=v.conv;if(typeof v.instr==="string")p.instr=v.instr;p._local=true}}catch(e){}
+    try{const v=JSON.parse(localStorage.getItem(LSK+p.id)||"null");if(v&&Array.isArray(v.lex)){p.lex=v.lex;if(Array.isArray(v.conv))p.conv=v.conv;if(typeof v.instr==="string"&&(v.iv||1)===(base.instrVersion||1))p.instr=v.instr;p._local=true}}catch(e){}
     PROJ[p.id]=p}catch(e){}
   if(!PROJ[S.project])S.project=PROJ.catechese?"catechese":"none";renderAll()}
 function normAr(s){return String(s).normalize("NFC").replace(/[ً-ٰٟـ]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي")}
