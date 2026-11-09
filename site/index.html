@@ -1035,7 +1035,7 @@ No code fences, no <html> or <body>, no explanation.`;
 /* ---------- documents: translation ---------- */
 function textModels(){const live=ENG.models.filter(m=>!ENG.dead.has(m));const n=ENG.quality==="fast"?live.length:ENG.quality==="balanced"?3:2;return live.slice(0,Math.max(1,n))}
 function parallel(){return Math.min(8,Math.max(2,textModels().length*2))}
-function makeChunks(blocks,only,max=4500){
+function makeChunks(blocks,only,max=7500){
   const chunks=[];let cur=null;
   blocks.forEach((h,i)=>{if(only&&!only.has(i))return;const tagged=h.replace(/^<([a-z0-9]+)/i,`<$1 data-b="${i}"`);
     if(!cur||cur.len+tagged.length>max){cur={ids:[],html:"",len:0};chunks.push(cur)}cur.ids.push(i);cur.html+=tagged+"\n";cur.len+=tagged.length});
