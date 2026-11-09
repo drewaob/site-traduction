@@ -1,0 +1,13 @@
+{
+  "name": "smsm-traduction",
+  "version": "2.0.0",
+  "private": true,
+  "description": "SMSM Traduction : service de traduction de l'église, arabe ↔ français, IA open source gratuite (Cloudflare Workers AI / Groq)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

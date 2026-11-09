@@ -1,0 +1,20 @@
+{
+  // SMSM Traduction — Cloudflare Workers (offre gratuite)
+  "name": "smsm-traduction",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "ai": { "binding": "AI" },
+  // Créé automatiquement au premier déploiement (wrangler 4.45 ou plus récent)
+  "kv_namespaces": [{ "binding": "DATA" }],
+  "vars": {
+    "WORKERS_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "GROQ_MODEL": "llama-3.3-70b-versatile",
+    "GROQ_VISION_MODEL": "meta-llama/llama-4-scout-17b-16e-instruct"
+  },
+  "observability": { "enabled": true }
+}
