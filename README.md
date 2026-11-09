@@ -1,63 +1,29 @@
 # SMSM Traduction
 
-Service de traduction de l'église, spécialisé arabe ↔ français (et plus de 80 langues), **gratuit** :
+Site de traduction de l'église, spécialisé **arabe ↔ français**, et plus de 80 autres langues. **Entièrement gratuit, sans clé ni compte.**
 
-- **Hébergement** : Cloudflare Workers, offre gratuite, toujours en ligne, adresse en `https://smsm-traduction.<ton-nom>.workers.dev`.
-- **IA gratuite, sans aucune clé obligatoire** :
-  - **OVHcloud AI Endpoints**, en accès anonyme. L'appel part du navigateur de chaque traducteur, donc chacun a son propre quota : 2 requêtes par minute et par modèle, sur 3 modèles. Plus il y a de traducteurs, plus le volume total est grand.
-  - **Cloudflare Workers AI**, inclus, sans clé : environ 30 pages par jour.
-  - En option, des clés gratuites ajoutent du volume et de la qualité : Mistral, Cerebras, Groq, NVIDIA (voir le tableau plus bas).
-- **Lecture des scans et photos (OCR)** : Tesseract, open source. La lecture se fait dans le navigateur du traducteur, en arabe, français et anglais : gratuite, illimitée, sans clé.
+- **Traduction** : IA open source d'[OVHcloud AI Endpoints](https://endpoints.ai.cloud.ovh.net/) en accès anonyme.
+  - L'appel part du navigateur de chaque traducteur, donc chacun a son propre quota : 2 requêtes par minute et par modèle.
+  - Le site répartit le travail entre les modèles disponibles et gère la file d'attente.
+- **Lecture des scans et photos (OCR)** : Tesseract, open source, dans le navigateur. Arabe, français et anglais, sans limite.
+- **Fichiers** : Word, PowerPoint et Excel ressortent au même format et avec la même mise en page. PDF, scans, texte et HTML sont reconstruits.
+- **Lexique du diocèse** : `site/data/catechese.json` (143 termes et 16 conventions), appliqué automatiquement.
+- **Hébergement** : GitHub Pages, gratuit. Publication automatique à chaque modification de `main`, via `.github/workflows/pages.yml`.
 
-  | Moteur facultatif | Gratuit | Clé |
-  |---|---|---|
-  | Mistral | crédits ou volume mensuel gratuits (variable), excellent en français | console.mistral.ai, vérification par SMS. Les textes peuvent servir à l'entraînement de Mistral. |
-  | Cerebras | variable selon la période | cloud.cerebras.ai |
-  | Groq (Llama 3.3 70B) | environ 1 000 requêtes par jour, et lecture IA des scans (meilleure mise en page que l'OCR) | console.groq.com |
-  | NVIDIA (Llama 3.3 70B) | crédits gratuits | build.nvidia.com |
+## Structure
 
-  Les offres gratuites changent souvent. L'ordre et l'activation des moteurs se règlent dans **Équipe**.
-- **Données** : comptes, lexique, propositions de termes et réglages sont stockés dans Cloudflare KV (gratuit).
+| Dossier | Contenu |
+|---|---|
+| `site/` | Le site publié (une page `index.html` + `data/catechese.json`) |
+| `serveur-cloudflare/` | Version avec serveur, à utiliser seulement si OVH bloque les appels depuis le navigateur, ou pour avoir des comptes et un lexique partagé en direct |
 
-## Mettre en ligne (et mettre à jour)
+## Mettre à jour le lexique pour toute l'équipe
 
-Double-clique sur `mettre-en-ligne.command`. Le script :
+1. Sur le site : **Lexique → Exporter le lexique** (Excel).
+2. Converti en JSON, il remplace `site/data/catechese.json`. Le site se met à jour tout seul en 1 à 2 minutes.
 
-1. installe les outils,
-2. te connecte à Cloudflare (compte gratuit),
-3. publie le site,
-4. te demande les clés gratuites des moteurs (Mistral, Cerebras, Groq, NVIDIA).
+## Limites
 
-À la première visite du site, crée ton compte administrateur. Ajoute ensuite les traducteurs dans **Équipe**.
-
-Pour publier une modification, relance simplement `mettre-en-ligne.command`.
-
-## Parcours
-
-- **Accueil** : choisir entre traduire un document ou un texte.
-- **Document** : 5 étapes.
-  1. Fichier.
-  2. Réglages.
-  3. Traduction.
-  4. Relecture, où chaque paragraphe se corrige.
-  5. Téléchargement, avec Word, PowerPoint ou Excel au même format et la même mise en page.
-- **Texte** : traduction modifiable directement, contrôle qualité, export.
-- **Lexique** : le référentiel du diocèse.
-  - Les traducteurs **proposent** des termes ; l'administrateur les **valide**.
-  - Import et export Excel.
-  - Consignes du projet.
-- **Équipe** (administrateur) : comptes des traducteurs et choix du moteur.
-- **Mon compte** : changer son mot de passe.
-
-## Limites à connaître
-
-- Si tous les moteurs atteignent leur limite le même jour, le site l'indique clairement et reprend dès qu'un moteur redevient disponible.
-- La qualité des modèles open source est bonne mais en dessous des meilleurs modèles payants sur les textes théologiques : la relecture reste indispensable.
-- L'OCR gratuit lit bien le texte imprimé. Les tableaux complexes et l'écriture manuscrite passent mieux avec une clé Groq ou Mistral.
-
-## Test local
-
-```bash
-npm install
-npx wrangler dev --var MOCK_ENGINE:1   # moteur factice, sans quota
-```
+- Le quota gratuit OVH est de 2 requêtes par minute et par modèle, **par connexion internet**. Un long document prend donc quelques minutes, mais se termine sans erreur.
+- La qualité des modèles open source est bonne : la relecture reste indispensable pour les textes théologiques.
+- Le site est public pour qui connaît l'adresse. Il ne stocke aucun texte : tout reste dans le navigateur, et les textes sont envoyés à OVH pour être traduits.
