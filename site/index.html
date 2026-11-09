@@ -394,9 +394,11 @@ body.not-admin .admin-only{display:none!important}
             <button class="btn sm" id="sampleDocBtn" type="button" data-t="loadSample"></button>
             <span class="chip" id="fileChip" hidden></span>
             <label class="fld" id="readFld"><span data-t="readMode"></span><select id="readSel"></select></label>
+            <label class="fld" id="ocrFld"><span data-t="ocrMode"></span><select id="ocrSel"></select></label>
             <label class="fld"><span data-t="arFont"></span><select id="fontSel"></select></label>
             <label class="fld"><span data-t="digits"></span><select id="digSel"></select></label>
             <div class="spacer"></div>
+            <button class="btn" id="ocrBtn" type="button" data-t="ocrBtn" hidden></button>
             <button class="btn primary" id="docBtn" type="button" data-t="translateDoc" disabled></button>
             <button class="btn" id="docStop" type="button" data-t="stop" hidden></button>
             <button class="btn primary" id="offDl" type="button" hidden></button>
@@ -460,6 +462,7 @@ body.not-admin .admin-only{display:none!important}
           <p class="muted" style="margin:0;font-size:14px" data-t="engExplain"></p>
           <div class="note ok" id="engCap"></div>
           <div class="fld"><span data-t="engModelsT"></span><ul id="engModels" style="margin:0;padding-inline-start:20px"></ul></div>
+          <div class="fld"><span data-t="engVisionT"></span><span id="engVision" style="font-size:14px"></span></div>
           <p class="muted" style="margin:0;font-size:12.5px"><span data-t="engAddr"></span> <code id="engBase"></code></p>
           <div class="row" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="btn primary" id="engTest" type="button" data-t="engTestBtn"></button><span id="engTestOut" class="muted"></span></div>
           <div class="note bad" id="blockedNote" hidden data-t="blockedNote"></div>
@@ -500,7 +503,7 @@ const PROFILES={
 const FONTS=["Noto Naskh Arabic","Noto Sans Arabic","Amiri","IBM Plex Sans Arabic","Cairo"];
 
 const I18N={
-fr:{navSettings:"Réglages",homeHelloAnon:"Bienvenue",savedLocal:"Enregistré sur cet ordinateur",setRubric:"Moteur et partage",setIntro:"La traduction utilise une IA open source gratuite d'OVHcloud, sans clé ni compte. La lecture des scans se fait dans votre navigateur.",engExplain:"Chaque ordinateur a son propre quota gratuit : 2 requêtes par minute et par modèle. Le site répartit le travail entre les modèles et met en file d'attente : un long document se traduit à la suite, sans erreur.",engCap:"Capacité de cet ordinateur : environ {n} paragraphes ou pages par minute.",engModelsT:"Modèles utilisés",engAddr:"Adresse :",engTestBtn:"Tester la traduction",testing:"Test en cours…",testOk:"Fonctionne ({s} s, {m}) : {r}",stOk:"Disponible",stBlocked:"Bloqué par le navigateur",stUnknown:"Pas encore testé",stDead:"indisponible",blockedNote:"OVH refuse les appels venant directement d'un navigateur. Il faut alors un relais : demandez à l'administrateur de le configurer ci-contre.",lexShareT:"Partager le lexique",lexShareP:"Les ajouts au lexique sont enregistrés sur cet ordinateur. Pour les partager avec toute l'équipe : Lexique, Exporter le lexique, puis l'administrateur remplace le fichier site/data/catechese.json sur GitHub (ou envoie l'Excel à Claude pour la conversion).",relayT:"Avancé : relais",relayP:"À utiliser seulement si OVH bloque les appels depuis le navigateur ou pour un autre fournisseur compatible OpenAI sans clé.",relayL:"Adresse du relais (compatible OpenAI, se termine par /v1)",eOvhBlocked:"Le moteur OVH n'accepte pas les appels depuis ce navigateur. Voir Réglages.",eOvhNoModel:"Aucun modèle OVH n'est disponible pour le moment. Réessayez plus tard.",queueHint:"File d'attente : le quota gratuit est de 2 requêtes par minute et par modèle, la traduction reprend toute seule.",brandSub:"Traduction",navHome:"Accueil",navLex:"Lexique",navTeam:"Équipe",navAccount:"Mon compte",logout:"Se déconnecter",
+fr:{ocrBtn:"Extraire le texte (OCR)",ocrDone:"Texte lu : {n} blocs. Corrigez-le directement ci-dessous si besoin, puis traduisez-le ou téléchargez-le avec « Exporter ».",ocrMode:"Lecture des scans",ocrFast:"Rapide (dans le navigateur)",ocrAI:"Précise (IA OVH : tableaux, mise en page)",ocrFallback:"Lecture IA indisponible : lecture rapide utilisée.",engVisionT:"Lecture précise des scans (IA)",noVision:"aucun modèle d'images disponible : la lecture rapide est utilisée",navSettings:"Réglages",homeHelloAnon:"Bienvenue",savedLocal:"Enregistré sur cet ordinateur",setRubric:"Moteur et partage",setIntro:"La traduction utilise une IA open source gratuite d'OVHcloud, sans clé ni compte. La lecture des scans se fait dans votre navigateur.",engExplain:"Chaque ordinateur a son propre quota gratuit : 2 requêtes par minute et par modèle. Le site répartit le travail entre les modèles et met en file d'attente : un long document se traduit à la suite, sans erreur.",engCap:"Capacité de cet ordinateur : environ {n} paragraphes ou pages par minute.",engModelsT:"Modèles utilisés",engAddr:"Adresse :",engTestBtn:"Tester la traduction",testing:"Test en cours…",testOk:"Fonctionne ({s} s, {m}) : {r}",stOk:"Disponible",stBlocked:"Bloqué par le navigateur",stUnknown:"Pas encore testé",stDead:"indisponible",blockedNote:"OVH refuse les appels venant directement d'un navigateur. Il faut alors un relais : demandez à l'administrateur de le configurer ci-contre.",lexShareT:"Partager le lexique",lexShareP:"Les ajouts au lexique sont enregistrés sur cet ordinateur. Pour les partager avec toute l'équipe : Lexique, Exporter le lexique, puis l'administrateur remplace le fichier site/data/catechese.json sur GitHub (ou envoie l'Excel à Claude pour la conversion).",relayT:"Avancé : relais",relayP:"À utiliser seulement si OVH bloque les appels depuis le navigateur ou pour un autre fournisseur compatible OpenAI sans clé.",relayL:"Adresse du relais (compatible OpenAI, se termine par /v1)",eOvhBlocked:"Le moteur OVH n'accepte pas les appels depuis ce navigateur. Voir Réglages.",eOvhNoModel:"Aucun modèle OVH n'est disponible pour le moment. Réessayez plus tard.",queueHint:"File d'attente : le quota gratuit est de 2 requêtes par minute et par modèle, la traduction reprend toute seule.",brandSub:"Traduction",navHome:"Accueil",navLex:"Lexique",navTeam:"Équipe",navAccount:"Mon compte",logout:"Se déconnecter",
 loginSide:"Service de traduction de l'église · arabe ↔ français et plus de 80 langues",lgUser:"Identifiant",lgPass:"Mot de passe",lgPass2:"Confirmer le mot de passe",lgGo:"Se connecter",lgSetupGo:"Créer le compte administrateur",lgTitle:"Connexion",lgSetupTitle:"Bienvenue",lgIntro:"Utilisez l'identifiant donné par l'administrateur.",lgSetupIntro:"Le site est neuf : créez le compte administrateur. Vous ajouterez ensuite les traducteurs.",lgRubric:"SMSM Traduction",lgBad:"Identifiant ou mot de passe incorrect.",lgWait:"Trop d'essais. Patientez 15 minutes.",lgMismatch:"Les deux mots de passe sont différents.",lgShort:"Identifiant : minuscules, chiffres, . _ - ; mot de passe : 10 caractères minimum.",
 homeHello:"Bonjour {u}",homeIntro:"Déposez un document ou collez un texte : il est traduit gratuitement avec le lexique du diocèse, puis vous relisez avant de télécharger.",homeFolio:"Exemple de traduction validée",homeLex:"{n} termes au lexique",actDocT:"Traduire un document",actDocP:"Word, PowerPoint et Excel ressortent avec la même mise en page. Aussi PDF et scans.",actTextT:"Traduire un texte",actTextP:"Collez un passage, une annonce ou un message et corrigez directement le résultat.",
 pr1:"Déposer",pr1d:"Un fichier Word, PowerPoint, Excel, PDF ou une photo.",pr2:"Régler",pr2d:"Langues et profil ; le lexique du projet s'applique tout seul.",pr3:"Relire",pr3d:"Corrigez chaque paragraphe, validez les points signalés.",pr4:"Télécharger",pr4d:"Le fichier ressort dans son format, prêt à imprimer.",
@@ -518,7 +521,7 @@ ckNumOk:"Nombres identiques",ckNumMiss:"Nombres à vérifier : {x}",ckParOk:"Par
 vOk:"Aucun problème relevé",vReview:"À relire",vBad:"Problèmes importants",sev:{haute:"Élevée",moyenne:"Moyenne",basse:"Faible"},cat:{omission:"Omission",ajout:"Ajout",sens:"Sens",terminologie:"Terminologie",nom_propre:"Nom propre",nombre_date:"Nombre ou date",grammaire:"Grammaire",registre:"Registre",typographie:"Typographie"},exSrc:"Original",exTr:"Traduction",exFix:"Proposition",apply:"Appliquer",applied:"Correction appliquée",
 export:"Exporter",exportScope:"Direction RTL/LTR, police arabe et structure conservées. Le PDF est rendu en image pour garantir la forme des lettres arabes.",layout:"Mise en page",lT:"Traduction seule",lSide:"Bilingue côte à côte",lStack:"Original puis traduction",txt:"Texte (.txt)",saved:"Fichier enregistré",declined:"Enregistrement annulé",dlOff:"Le téléchargement n'est pas disponible dans cette vue.",nothing:"Rien à exporter pour l'instant.",building:"Préparation du fichier…",footer:"Traduction {s} → {t} · Page ",lbOrig:"Original",lbTr:"Traduction",
 eUnavailable:"Le moteur de traduction est injoignable. Réessayez dans un instant.",eNotGranted:"Autorisez cette page à utiliser Claude pour traduire.",eRate:"Trop de demandes en peu de temps. Réessayez dans un moment.",eTooLarge:"Texte trop long pour l'onglet Texte : utilisez l'onglet Document, qui découpe automatiquement.",eRefused:"Ce contenu n'a pas pu être traduit.",eSession:"Votre session a expiré : reconnectez-vous à Claude.",eGeneric:"La traduction a échoué. Réessayez.",eJson:"Le rapport de contrôle n'a pas pu être lu. Relancez le contrôle.",lexTitle:"Projet et lexique",lexScope:"Le lexique du projet prime sur toute autre traduction. Seuls les termes présents dans le texte sont envoyés, pour limiter l'usage.",project:"Projet",noProject:"Aucun (traduction générale)",importedProj:"Lexique importé",lexCount:"{n} termes · {c} conventions",lexImport:"Importer un lexique (.xlsx, .csv)",lexExport:"Exporter le lexique (.xlsx)",lexReset:"Revenir au lexique d'origine",lexResetDone:"Lexique d'origine rétabli",officeNote:"Mode fidèle : le fichier ressortira au même format, avec sa mise en page, ses styles, tableaux et images. Chaque paragraphe reste modifiable après traduction.",doneOffice:"Traduction terminée : {n} paragraphes. Relisez et modifiez si besoin, puis téléchargez.",fileSegs:"{name} · {n} paragraphes",offDl:"Télécharger le fichier traduit",instr:"Consignes du projet",lexBrowse:"Parcourir le lexique ({n} termes)",lexSearch:"Rechercher un terme",colAr:"Terme arabe",colFr:"Français retenu",colNote:"Règle",colCat:"Catégorie",points:"Points à valider",ptProposal:"Proposé",ptAlt:"Alternative",newTerms:"Nouveaux termes à ajouter au lexique",add:"Ajouter",ignore:"Ignorer",added:"Ajouté au lexique",lexImported:"Lexique importé : {n} termes",lexBad:"Aucune colonne de termes reconnue dans ce fichier.",ckLexOk:"Lexique respecté ({n} termes)",ckLex:"Lexique à vérifier : {x}",sep:" : "},
-ar:{navSettings:"الإعدادات",homeHelloAnon:"أهلًا بك",savedLocal:"حُفظ على هذا الحاسوب",setRubric:"المحرك والمشاركة",setIntro:"تستخدم الترجمة ذكاءً اصطناعيًا مفتوح المصدر ومجانيًا من OVHcloud، بلا مفتاح ولا حساب. وتتم قراءة المستندات الممسوحة داخل متصفحك.",engExplain:"لكل حاسوب حصته المجانية: طلبان في الدقيقة لكل نموذج. يوزّع الموقع العمل على النماذج ويضعه في قائمة انتظار: يُترجَم المستند الطويل على التوالي دون أخطاء.",engCap:"قدرة هذا الحاسوب: نحو {n} فقرة أو صفحة في الدقيقة.",engModelsT:"النماذج المستخدمة",engAddr:"العنوان:",engTestBtn:"اختبار الترجمة",testing:"جارٍ الاختبار…",testOk:"يعمل ({s} ث، {m}): {r}",stOk:"متاح",stBlocked:"محجوب من المتصفح",stUnknown:"لم يُختبر بعد",stDead:"غير متاح",blockedNote:"يرفض OVH الطلبات الصادرة مباشرة من المتصفح. يلزم عندئذ وسيط: اطلب من المسؤول إعداده.",lexShareT:"مشاركة المسرد",lexShareP:"تُحفظ الإضافات إلى المسرد على هذا الحاسوب. لمشاركتها مع الفريق: المسرد ← تصدير المسرد، ثم يستبدل المسؤول الملف site/data/catechese.json على GitHub.",relayT:"متقدم: وسيط",relayP:"يُستخدم فقط إذا حجب OVH الطلبات من المتصفح، أو لمزوّد آخر متوافق مع OpenAI بلا مفتاح.",relayL:"عنوان الوسيط (متوافق مع OpenAI، ينتهي بـ ‎/v1)",eOvhBlocked:"لا يقبل محرك OVH الطلبات من هذا المتصفح. راجع الإعدادات.",eOvhNoModel:"لا يتوفر أي نموذج OVH حاليًا. حاول لاحقًا.",queueHint:"قائمة انتظار: الحصة المجانية طلبان في الدقيقة لكل نموذج، وتُستأنف الترجمة تلقائيًا.",brandSub:"ترجمة",navHome:"الرئيسية",navLex:"المسرد",navTeam:"الفريق",navAccount:"حسابي",logout:"تسجيل الخروج",
+ar:{ocrBtn:"استخراج النص (OCR)",ocrDone:"تمت قراءة النص: {n} عنصرًا. صحّحه مباشرة أدناه عند الحاجة، ثم ترجمه أو نزّله عبر «تصدير».",ocrMode:"قراءة المستندات الممسوحة",ocrFast:"سريعة (داخل المتصفح)",ocrAI:"دقيقة (ذكاء OVH: الجداول والتنسيق)",ocrFallback:"القراءة بالذكاء الاصطناعي غير متاحة: استُخدمت القراءة السريعة.",engVisionT:"القراءة الدقيقة للمستندات الممسوحة (ذكاء اصطناعي)",noVision:"لا يتوفر نموذج للصور: تُستخدم القراءة السريعة",navSettings:"الإعدادات",homeHelloAnon:"أهلًا بك",savedLocal:"حُفظ على هذا الحاسوب",setRubric:"المحرك والمشاركة",setIntro:"تستخدم الترجمة ذكاءً اصطناعيًا مفتوح المصدر ومجانيًا من OVHcloud، بلا مفتاح ولا حساب. وتتم قراءة المستندات الممسوحة داخل متصفحك.",engExplain:"لكل حاسوب حصته المجانية: طلبان في الدقيقة لكل نموذج. يوزّع الموقع العمل على النماذج ويضعه في قائمة انتظار: يُترجَم المستند الطويل على التوالي دون أخطاء.",engCap:"قدرة هذا الحاسوب: نحو {n} فقرة أو صفحة في الدقيقة.",engModelsT:"النماذج المستخدمة",engAddr:"العنوان:",engTestBtn:"اختبار الترجمة",testing:"جارٍ الاختبار…",testOk:"يعمل ({s} ث، {m}): {r}",stOk:"متاح",stBlocked:"محجوب من المتصفح",stUnknown:"لم يُختبر بعد",stDead:"غير متاح",blockedNote:"يرفض OVH الطلبات الصادرة مباشرة من المتصفح. يلزم عندئذ وسيط: اطلب من المسؤول إعداده.",lexShareT:"مشاركة المسرد",lexShareP:"تُحفظ الإضافات إلى المسرد على هذا الحاسوب. لمشاركتها مع الفريق: المسرد ← تصدير المسرد، ثم يستبدل المسؤول الملف site/data/catechese.json على GitHub.",relayT:"متقدم: وسيط",relayP:"يُستخدم فقط إذا حجب OVH الطلبات من المتصفح، أو لمزوّد آخر متوافق مع OpenAI بلا مفتاح.",relayL:"عنوان الوسيط (متوافق مع OpenAI، ينتهي بـ ‎/v1)",eOvhBlocked:"لا يقبل محرك OVH الطلبات من هذا المتصفح. راجع الإعدادات.",eOvhNoModel:"لا يتوفر أي نموذج OVH حاليًا. حاول لاحقًا.",queueHint:"قائمة انتظار: الحصة المجانية طلبان في الدقيقة لكل نموذج، وتُستأنف الترجمة تلقائيًا.",brandSub:"ترجمة",navHome:"الرئيسية",navLex:"المسرد",navTeam:"الفريق",navAccount:"حسابي",logout:"تسجيل الخروج",
 loginSide:"خدمة الترجمة في الكنيسة · العربية ↔ الفرنسية وأكثر من 80 لغة",lgUser:"اسم المستخدم",lgPass:"كلمة المرور",lgPass2:"تأكيد كلمة المرور",lgGo:"تسجيل الدخول",lgSetupGo:"إنشاء حساب المسؤول",lgTitle:"تسجيل الدخول",lgSetupTitle:"أهلًا بك",lgIntro:"استخدم اسم المستخدم الذي أعطاك إياه المسؤول.",lgSetupIntro:"الموقع جديد: أنشئ حساب المسؤول، ثم أضف المترجمين.",lgRubric:"SMSM للترجمة",lgBad:"اسم المستخدم أو كلمة المرور غير صحيحة.",lgWait:"محاولات كثيرة. انتظر 15 دقيقة.",lgMismatch:"كلمتا المرور غير متطابقتين.",lgShort:"اسم المستخدم: أحرف لاتينية صغيرة وأرقام و . _ - ؛ كلمة المرور: 10 أحرف على الأقل.",
 homeHello:"مرحبًا {u}",homeIntro:"أفلت مستندًا أو الصق نصًا: يُترجَم وفق مسرد الإيبارشية، ثم تراجعه قبل التنزيل.",homeFolio:"مثال على ترجمة معتمدة",homeLex:"{n} مصطلحًا في المسرد",actDocT:"ترجمة مستند",actDocP:"تخرج ملفات وورد وباوربوينت وإكسل بالتنسيق نفسه، وكذلك ملفات PDF والمستندات الممسوحة.",actTextT:"ترجمة نص",actTextP:"الصق مقطعًا أو إعلانًا أو رسالة وصحّح النتيجة مباشرة.",
 pr1:"أفلت الملف",pr1d:"ملف وورد أو باوربوينت أو إكسل أو PDF أو صورة.",pr2:"اضبط",pr2d:"اللغتان والمجال؛ ويُطبَّق مسرد المشروع تلقائيًا.",pr3:"راجع",pr3d:"صحّح كل فقرة واعتمد النقاط المُشار إليها.",pr4:"نزّل",pr4d:"يخرج الملف بصيغته الأصلية، جاهزًا للطباعة.",
@@ -706,6 +709,7 @@ $("#offDl").textContent=T("offDl");
   fillSimple($("#profSel"),Object.entries(PROFILES).map(([k,p])=>[k,p[ui]]),S.profile);
   fillSimple($("#readSel"),[["auto",T("rmAuto")],["text",T("rmText")],["vision",T("rmVision")]],S.readMode);
   fillSimple($("#fontSel"),FONTS.map(f=>[f,f]),S.arFont);
+  fillSimple($("#ocrSel"),[["fast",T("ocrFast")],["ai",T("ocrAI")]],S.ocrMode||"fast");
   fillSimple($("#digSel"),[["western",T("dWest")],["eastern",T("dEast")]],S.digits);
   fillSimple($("#laySel"),[["target",T("lT")],["side",T("lSide")],["stack",T("lStack")]],S.layout);
   renderAll();
@@ -958,7 +962,11 @@ async function tesseractOcr(signal){
   d.blocks=blockify(html);d.ocr=false;autoTarget();
 }
 async function runOcr(signal){
-  const d=S.doc;if(!imgMax)return tesseractOcr(signal);
+  const d=S.doc;if(!imgMax||S.ocrMode!=="ai")return tesseractOcr(signal);
+  try{return await aiOcr(signal)}catch(e){if(e&&e.code==="cancelled")throw e;toast(T("ocrFallback"));return tesseractOcr(signal)}
+}
+async function aiOcr(signal){
+  const d=S.doc;
   const MAXP=30;const n=d.images.length||Math.min(d.pages,MAXP);if(d.pages>MAXP)toast(T("tooManyPages",{n:MAXP}));
   const per=Math.max(1,Math.min(imgMax,3));let html="";
   for(let a=1;a<=n;a+=per){const b=Math.min(n,a+per-1);docMsg(T("ocr",{a,b,n}));prog((a-1)/n*.4);
@@ -1200,7 +1208,8 @@ function exportData(){
 }
 function withImgs(h){return h.replace(/<img([^>]*?)data-img="(\d+)"([^>]*)>/g,(m,a,n,b)=>`<img${a}data-img="${n}" src="${IMGS[+n]?esc(IMGS[+n].src):""}"${b}>`)}
 function layoutHtml(x,layout,edit){
-  if(edit&&x.tb.length)x={...x,tb:x.tb.map((h,i)=>`<div data-tb="${i}">${h}</div>`)};
+  if(edit===true&&x.tb.length)x={...x,tb:x.tb.map((h,i)=>`<div data-tb="${i}">${h}</div>`)};
+  if(edit==="src"&&!x.tb.length)x={...x,sb:x.sb.map((h,i)=>`<div data-sb="${i}">${h}</div>`)};
   const sd=isRtl(x.src)?"rtl":"ltr",td=isRtl(x.tgt)?"rtl":"ltr";
   const flow=(bl,dir,lang)=>`<div dir="${dir}" lang="${lang}">${bl.join("")}</div>`;
   let h;
@@ -1227,14 +1236,16 @@ function renderSteps(){
 function renderDoc(){
   const d=S.doc;setTimeout(renderSteps);const fc=$("#fileChip");
   fc.hidden=!d.name;fc.textContent=d.name?(d.blocks.length?T("fileInfo",{name:d.name,n:d.blocks.length}):T("filePages",{name:d.name,n:d.pages||1})):"";
-  $("#readFld").hidden=!d.pdf;
+  $("#readFld").hidden=!d.pdf;$("#ocrFld").hidden=!(d.pdf||d.images.length);
+  $("#ocrBtn").hidden=!(d.ocr&&!OFF)||!$("#docStop").hidden;
   $("#offDl").hidden=!(OFF&&d.done);$("#exportRail").hidden=!!OFF&&S.tab==="doc";
   if(OFF){fc.hidden=false;fc.textContent=T("fileSegs",{name:OFF.name,n:OFF.segs.length});$("#docBtn").disabled=!OFF.segs.length||!$("#docStop").hidden;renderSegs();return}
   $("#docBtn").disabled=!(d.blocks.length||d.ocr)||!!(docCtl&&!docCtl.signal.aborted&&!$("#docStop").hidden);
   const x=exportData&&S.tab==="doc"?exportData():(d.blocks.length?{src:S.src==="auto"?(d.detected||"ar"):S.src,tgt:S.tgt,sb:d.blocks,tb:[],name:""}:null);
   const prev=$("#docPrev");
   if(!x){prev.innerHTML=`<p class="muted" style="font-family:var(--font-ui)">${esc(T(d.ocr?"ocrNeeded":"docEmpty"))}</p>`;return}
-  prev.innerHTML=layoutHtml(x,S.layout,d.done);
+  prev.innerHTML=layoutHtml(x,S.layout,d.done?true:"src");
+  if(!d.done)prev.querySelectorAll("[data-sb]").forEach(el=>{el.contentEditable="true";el.addEventListener("input",()=>{const c=el.cloneNode(true);c.querySelectorAll("img[data-img]").forEach(im=>im.removeAttribute("src"));d.blocks[+el.dataset.sb]=c.innerHTML})});
   if(d.done)prev.querySelectorAll("[data-tb]").forEach(el=>{el.contentEditable="true";el.addEventListener("input",()=>{const i=+el.dataset.tb;const c=el.cloneNode(true);c.querySelectorAll("img[data-img]").forEach(im=>im.removeAttribute("src"));c.querySelectorAll(".miss-label").forEach(n=>n.remove());const inner=c.querySelector(".missing");d.tblocks[i]={html:inner?inner.innerHTML:c.innerHTML};el.querySelector(".missing")?.classList.remove("missing")})});
 }
 
@@ -1395,6 +1406,13 @@ drop.addEventListener("drop",e=>{const f=e.dataTransfer&&e.dataTransfer.files[0]
 $("#sampleDocBtn").onclick=loadSampleDoc;
 $("#docBtn").onclick=()=>translateDoc(false);
 $("#docStop").onclick=()=>docCtl?.abort();
+$("#ocrSel").onchange=e=>{S.ocrMode=e.target.value};
+$("#ocrBtn").onclick=async()=>{
+  if(!S.doc.ocr)return;docCtl?.abort();const ctl=docCtl=new AbortController();busyDoc(true);
+  try{await runOcr(ctl.signal);docMsg(T("ocrDone",{n:S.doc.blocks.length}),"ok")}
+  catch(e){if(!e||e.code!=="cancelled")docMsg(errMsg(e),"bad")}
+  finally{if(docCtl===ctl)busyDoc(false);renderDoc();renderChecks()}
+};
 $("#offDl").onclick=async()=>{if(!OFF)return;const b=$("#offDl");b.disabled=true;toast(T("building"));try{const blob=await buildOffice();await save(OFF.name.replace(/\.(docx|pptx|xlsx)$/i,"")+"_"+S.tgt+"."+OFF.kind,blob)}catch(e){toast(T("eGeneric"))}finally{b.disabled=false}};
 $("#qcBtn").onclick=runQc;
 $("#projSel").onchange=e=>{S.project=e.target.value;const p=proj();if(p.id!=="none"){S.profile=p.id==="catechese"?"religious":S.profile;$("#profSel").value=S.profile;if(S.src==="auto"&&S.tgt!=="fr"&&S.tgt!=="ar"){S.tgt="fr";$("#tgtSel").value="fr"}}renderAll()};
@@ -1416,7 +1434,7 @@ function blobToDataUrl(b){return new Promise((res,rej)=>{const r=new FileReader(
    Les requêtes sont mises en file d'attente et réparties sur tous les modèles disponibles :
    un long document se traduit à la suite, sans erreur de quota. */
 var OVH_DEFAULT="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1";
-var ENG={base:OVH_DEFAULT,models:["gpt-oss-120b","Meta-Llama-3_3-70B-Instruct","Mistral-Small-3.2-24B-Instruct-2506","Qwen3-32B"],uses:{},cool:{},dead:new Set(),status:"unknown",last:null};
+var ENG={base:OVH_DEFAULT,models:["gpt-oss-120b","Meta-Llama-3_3-70B-Instruct","Mistral-Small-3.2-24B-Instruct-2506","Qwen3-32B"],uses:{},cool:{},dead:new Set(),status:"unknown",last:null,vision:[]};
 try{const r=localStorage.getItem("smsm.relay");if(r)ENG.base=r.replace(/\/+$/,"")}catch(e){}
 const PREF=[/gpt-oss-120b/i,/llama-3_3-70b/i,/qwen3/i,/mistral-small/i,/llama/i,/mistral/i,/qwen/i,/gpt-oss/i];
 const rank=id=>{const i=PREF.findIndex(r=>r.test(id));return i<0?99:i};
@@ -1426,17 +1444,23 @@ async function discoverModels(){
     const r=await fetch(ENG.base+"/models");
     if(!r.ok)throw{http:r.status};
     const j=await r.json();
-    const ids=(j.data||[]).map(m=>m.id).filter(id=>/(instruct|llama|mistral|qwen|gpt-oss|deepseek|gemma)/i.test(id)&&!/(embed|whisper|vl\b|-vl|vision|coder|guard|bge|sdxl|diffusion|rerank|ocr)/i.test(id));
+    const all=(j.data||[]).map(m=>m.id);
+    const size=id=>{const m=/(\d+(?:\.\d+)?)B\b/i.exec(id);return m?parseFloat(m[1]):100};
+    // modèles de texte assez grands pour une traduction de qualité (20 milliards de paramètres ou plus)
+    const ids=all.filter(id=>/(instruct|llama|mistral|qwen|gpt-oss|deepseek|gemma)/i.test(id)&&!/(embed|whisper|vl\b|-vl|vision|coder|guard|bge|sdxl|diffusion|rerank|ocr)/i.test(id)&&size(id)>=20);
     if(ids.length)ENG.models=ids.sort((a,b)=>rank(a)-rank(b)).slice(0,6);
+    // modèles qui lisent les images (lecture précise des scans)
+    ENG.vision=all.filter(id=>/(vl\b|-vl|vision)/i.test(id)&&!/(embed|ocr)/i.test(id)).sort((a,b)=>size(b)-size(a)).slice(0,3);
+    imgMax=ENG.vision.length?1:0;
     ENG.status="ok";
   }catch(e){ENG.status=e instanceof TypeError?"blocked":"unknown"}
   renderSettings();
 }
-async function slot(signal){
+async function slot(signal,list){
   for(;;){
     if(signal&&signal.aborted)throw{code:"cancelled"};
     const now=Date.now();let wait=Infinity;
-    for(const m of ENG.models){
+    for(const m of (list||ENG.models)){
       if(ENG.dead.has(m))continue;
       if((ENG.cool[m]||0)>now){wait=Math.min(wait,ENG.cool[m]-now);continue}
       const u=(ENG.uses[m]||[]).filter(t=>now-t<61000);ENG.uses[m]=u;
@@ -1449,6 +1473,9 @@ async function slot(signal){
   }
 }
 let qhT=null;function queueHint(on){const el=$("#queueHint");if(!el)return;el.hidden=!on;clearTimeout(qhT);if(on)qhT=setTimeout(()=>el.hidden=true,20000)}
+// certains modèles (Qwen 3) écrivent leur réflexion entre <think>…</think> : on ne garde que la réponse
+function noThink(t){return t.replace(/<think>[\s\S]*?(<\/think>|$)/g,"").replace(/^\s+/,"")}
+function blobToDataUrl(b){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(b)})}
 async function ovhOnce(input,opts,model){
   let r;
   try{r=await fetch(ENG.base+"/chat/completions",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:true,max_tokens:8000,temperature:0.2,messages:[{role:"user",content:input}]}),signal:opts.signal})}
@@ -1462,19 +1489,24 @@ async function ovhOnce(input,opts,model){
   try{for(;;){const{done,value}=await reader.read();if(done)break;buf+=dec.decode(value,{stream:true});let i;
     while((i=buf.indexOf("\n"))>=0){const line=buf.slice(0,i).trim();buf=buf.slice(i+1);if(!line.startsWith("data:"))continue;const raw=line.slice(5).trim();if(raw==="[DONE]")continue;
       let d;try{d=JSON.parse(raw)}catch(e){continue}const c=d.choices&&d.choices[0];if(!c)continue;
-      if(c.delta&&typeof c.delta.content==="string"&&c.delta.content){text+=c.delta.content;opts.onText&&opts.onText({text,delta:c.delta.content})}
+      if(c.delta&&typeof c.delta.content==="string"&&c.delta.content){text+=c.delta.content;const shown=noThink(text);if(shown)opts.onText&&opts.onText({text:shown,delta:c.delta.content})}
       if(c.finish_reason==="length")trunc=true}}}
   catch(e){if(opts.signal&&opts.signal.aborted)throw{code:"cancelled"};throw{code:"retry"}}
+  text=noThink(text);
   if(!text.trim())throw{code:"retry"};
   ENG.last=model;
   return{text,truncated:trunc};
 }
 function makeEngine(){
   async function call(input,opts={}){
-    if(opts.images)throw{code:"images_unavailable"};
-    const prompt=typeof input==="string"?input:input.map(m=>m.content).join("\n\n");
+    let prompt=typeof input==="string"?input:input.map(m=>m.content).join("\n\n");let list=ENG.models;
+    if(opts.images){
+      if(!ENG.vision.length)throw{code:"images_unavailable"};
+      const imgs=opts.images instanceof Blob?[opts.images]:[...opts.images];
+      prompt=[{type:"text",text:prompt},...(await Promise.all(imgs.map(blobToDataUrl))).map(url=>({type:"image_url",image_url:{url}}))];list=ENG.vision;
+    }
     for(let attempt=0;attempt<10;attempt++){
-      const m=await slot(opts.signal);
+      const m=await slot(opts.signal,list);
       try{const r=await ovhOnce(prompt,opts,m);queueHint(false);return r}
       catch(e){if(e.code!=="retry")throw e}
     }
@@ -1492,6 +1524,7 @@ function renderSettings(){
   const st=$("#engStatus");if(!st||!ENG)return;
   const k=ENG.status==="ok"?["ok","stOk"]:ENG.status==="blocked"?["bad","stBlocked"]:["","stUnknown"];
   st.className="chip "+k[0];st.textContent=T(k[1]);
+  $("#engVision").textContent=ENG.vision.length?ENG.vision.join(", "):T("noVision");
   $("#engModels").innerHTML=ENG.models.map(m=>`<li><code>${esc(m)}</code>${ENG.dead.has(m)?` <span class="chip bad">${esc(T("stDead"))}</span>`:""}</li>`).join("");
   $("#engBase").textContent=ENG.base;
   $("#engCap").textContent=T("engCap",{n:ENG.models.filter(m=>!ENG.dead.has(m)).length*2});
