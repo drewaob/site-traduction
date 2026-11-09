@@ -1,1 +1,1234 @@
-{"id": "catechese", "name": {"fr": "Catéchisme lycée – Diocèse copte", "ar": "منهج التعليم المسيحي للثانوي – الإيبارشية القبطية"}, "langs": ["ar", "fr"], "profile": "religious", "instr": "Tu traduis de l'arabe vers le français le programme de catéchisme destiné aux lycéens du Diocèse copte orthodoxe.\n- Traduis le sens, pas les mots. Jamais de traduction littérale lorsqu'elle produit un français artificiel, incorrect ou théologiquement imprécis.\n- Respecte la tradition copte orthodoxe : la terminologie théologique, liturgique, biblique et ecclésiologique doit être adaptée au contexte de l'Église copte orthodoxe.\n- Le lexique du projet est la source de vérité terminologique et prime sur tes préférences. Lorsqu'un terme du texte figure dans le lexique, utilise exactement la traduction validée. Ne remplace pas une traduction validée par une autre formulation sans raison.\n- Lorsqu'un nouveau terme théologique, liturgique ou ecclésiologique apparaît, identifie-le et propose une traduction pour le lexique.\n- Adapte le niveau de langue aux lycéens : français clair, fluide, moderne et pédagogique, sans être infantilisant ni universitaire.\n- Préserve le contenu théologique : n'ajoute aucune interprétation absente du texte original et ne supprime aucune notion, même répétitive ou difficile.\n- Conserve la structure : titres, sous-titres, paragraphes, listes, questions, exercices et références bibliques.\n- Pour les termes sans équivalent français exact, utilise le terme traditionnel approprié ou une formulation contextualisée.\n- Noms bibliques : formes françaises usuelles (Jésus, Moïse, Abraham, Pierre, Paul, Jean…).\n- En cas d'ambiguïté théologique ou terminologique réelle, ne tranche pas arbitrairement : signale un point à valider avec la traduction proposée et l'alternative éventuelle.\n- Style : théologique sans être universitaire, pédagogique sans être infantilisant, spirituel sans être excessivement lyrique, fidèle sans être littéral, naturel sans perdre la précision doctrinale.\n- Évite : tournures arabes transposées, phrases trop longues, répétitions artificielles, archaïsmes inutiles, anglicismes, traductions littérales de concepts théologiques.\n- Priorité : fidélité au sens → exactitude théologique → respect du lexique → clarté pédagogique → fluidité du français.", "lex": [{"cat": "Liturgie / Sacrements", "src": "سِرّ", "tgt": "Sacrement", "extra": "", "note": "Ne pas traduire littéralement par « mystère » dans le programme. Exception : hors contexte sacramentel, سر = « secret » (ex. سر قوة الذبيحة → « le secret de la force du sacrifice » ; سر الرجعة → « Prière du retour »).", "origin": "Lexique initial"}, {"cat": "Liturgie / Sacrements", "src": "سِرّ الميرون", "tgt": "Sacrement de la Confirmation", "extra": "Myron", "note": "Traduction retenue pour le programme.", "origin": "Lexique initial"}, {"cat": "Liturgie / Sacrements", "src": "سِرّ المعمودية", "tgt": "Sacrement du Baptême", "extra": "", "note": "Traduction retenue pour le programme.", "origin": "Lexique initial"}, {"cat": "Liturgie / Sacrements", "src": "الأسرار المقدسة", "tgt": "Sacrements", "extra": "", "note": "Selon le contexte : « les Saints Sacrements » peut être utilisé.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "القداس الإلهي", "tgt": "Divine Liturgie", "extra": "", "note": "Privilégier « Divine Liturgie » dans le contexte copte orthodoxe.", "origin": "Lexique initial"}, {"cat": "Liturgie / Sacrements", "src": "التناول", "tgt": "Sainte Communion", "extra": "", "note": "Selon la phrase : « recevoir la Sainte Communion ».", "origin": "Lexique initial"}, {"cat": "Liturgie / Sacrements", "src": "الاعتراف", "tgt": "Confession", "extra": "", "note": "Dans le contexte du sacrement de pénitence.", "origin": "Lexique initial"}, {"cat": "Liturgie / Sacrements", "src": "سر التوبة والاعتراف", "tgt": "Sacrement de la Pénitence et de la Confession", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Clergé", "src": "الكاهن", "tgt": "Prêtre", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Clergé", "src": "الأسقف", "tgt": "Évêque", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Clergé", "src": "البابا", "tgt": "Pape", "extra": "", "note": "Dans l'Église copte orthodoxe : le Pape est aussi Patriarche d'Alexandrie.", "origin": "Lexique initial"}, {"cat": "Clergé", "src": "قداسة البابا", "tgt": "Sa Sainteté le Pape", "extra": "", "note": "Formule protocolaire.", "origin": "Lexique initial"}, {"cat": "Clergé", "src": "الشماس", "tgt": "Diacre", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Clergé", "src": "الشمامسة", "tgt": "Diacres", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Église / Architecture", "src": "المذبح", "tgt": "Autel", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Église / Architecture", "src": "الهيكل", "tgt": "Sanctuaire", "extra": "", "note": "Dans le contexte liturgique. Exception validée : « Temple » quand il s’agit du Temple de Jérusalem.", "origin": "Lexique initial"}, {"cat": "Église / Architecture", "src": "خورس الشمامسة", "tgt": "Chœur des diacres", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Église / Architecture", "src": "الأيقونة", "tgt": "Icône", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Église / Architecture", "src": "الأيقونسطاس", "tgt": "Iconostase", "extra": "", "note": "Terme français consacré.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "البخور", "tgt": "Encens", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "رفع بخور عشية", "tgt": "Office de l'encens du soir", "extra": "", "note": "Terminologie à harmoniser dans l'ensemble du programme.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "رفع بخور باكر", "tgt": "Office de l'encens du matin", "extra": "", "note": "Terminologie à harmoniser dans l'ensemble du programme.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "اللحن", "tgt": "Hymne liturgique", "extra": "", "note": "Selon le contexte, peut aussi désigner une mélodie liturgique.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "إبصالية", "tgt": "Ipsalie", "extra": "", "note": "Terme liturgique spécifique, à conserver comme terme technique.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "ثيؤطوكية", "tgt": "Théotokie", "extra": "", "note": "Hymne liturgique consacrée à la Mère de Dieu.", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "تسبحة", "tgt": "Louange", "extra": "", "note": "La traduction dépend du contexte ; ne pas systématiquement traduire par « doxologie ».", "origin": "Lexique initial"}, {"cat": "Liturgie", "src": "تسبحة كيهك", "tgt": "Tasbīḥa de Kiahk", "extra": "", "note": "Conserver le terme spécifique et expliquer si nécessaire.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "قانون الإيمان", "tgt": "Symbole de foi", "extra": "", "note": "Ne pas traduire littéralement par « loi de la foi ».", "origin": "Lexique initial"}, {"cat": "Église", "src": "الكنيسة القبطية الأرثوذكسية", "tgt": "Église copte orthodoxe", "extra": "", "note": "Dénomination à harmoniser partout dans le programme.", "origin": "Lexique initial"}, {"cat": "Église", "src": "المجمع المقدس", "tgt": "Saint-Synode", "extra": "", "note": "Terme ecclésiologique.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "التدبير", "tgt": "Économie du salut", "extra": "", "note": "Dans le contexte théologique ; ne pas traduire par « gestion » ou « administration ».", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "التجسد", "tgt": "Incarnation", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الفداء", "tgt": "Rédemption", "extra": "", "note": "Selon le contexte théologique.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "والدة الإله", "tgt": "Mère de Dieu", "extra": "Théotokos", "note": "Terme dogmatique.", "origin": "Lexique initial"}, {"cat": "Vierge Marie", "src": "القديسة العذراء مريم", "tgt": "Sainte Vierge Marie", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Vierge Marie", "src": "أم النور", "tgt": "Mère de la Lumière", "extra": "", "note": "Titre traditionnel de la Vierge Marie.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "شفاعة", "tgt": "Intercession", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "شفيعة", "tgt": "Intercesseur / intercession", "extra": "", "note": "À adapter selon le contexte grammatical.", "origin": "Lexique initial"}, {"cat": "Saints", "src": "القديس", "tgt": "Saint", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Saints", "src": "الشهيد", "tgt": "Martyr", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "التقليد", "tgt": "Tradition", "extra": "", "note": "Selon le contexte : « Sainte Tradition ».", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "التقليد الكنسي", "tgt": "Tradition de l'Église", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "الآباء", "tgt": "Pères de l'Église", "extra": "", "note": "Selon le contexte.", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "أقوال الآباء", "tgt": "Enseignements des Pères", "extra": "", "note": "Peut aussi être « paroles des Pères » selon le texte.", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "النسك", "tgt": "Ascèse", "extra": "", "note": "À distinguer de « rite ».", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "الجهاد الروحي", "tgt": "Combat spirituel", "extra": "", "note": "Ne pas conserver « jihad » en français.", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "التوبة", "tgt": "Repentance / pénitence", "extra": "", "note": "Le choix dépend du contexte.", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "الصلاة", "tgt": "Prière", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Spiritualité", "src": "الصوم", "tgt": "Jeûne", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "الصوم الكبير", "tgt": "Grand Carême", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "أسبوع الآلام", "tgt": "Semaine Sainte", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "أحد الشعانين", "tgt": "Dimanche des Rameaux", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "خميس العهد", "tgt": "Jeudi Saint", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "الجمعة العظيمة", "tgt": "Vendredi Saint", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "سبت النور", "tgt": "Samedi Saint", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "عيد القيامة", "tgt": "Fête de la Résurrection / Pâques", "extra": "", "note": "Choix selon le contexte.", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "عيد الميلاد", "tgt": "Fête de la Nativité / Noël", "extra": "", "note": "Choix selon le contexte.", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "عيد الغطاس", "tgt": "Fête de la Théophanie", "extra": "", "note": "« Épiphanie » peut être utilisé selon le contexte ; « Théophanie » est plus précis dans le contexte orthodoxe.", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "عيد الصعود", "tgt": "Fête de l'Ascension", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Calendrier liturgique", "src": "عيد العنصرة", "tgt": "Pentecôte", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الغطاس", "tgt": "Théophanie", "extra": "", "note": "Selon le contexte, peut désigner la fête du Baptême du Christ.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الظهور الإلهي", "tgt": "Théophanie", "extra": "", "note": "Manifestation divine.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "حلول الروح القدس", "tgt": "Descente du Saint-Esprit", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الروح القدس", "tgt": "Saint-Esprit", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الثالوث القدوس", "tgt": "Sainte Trinité", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الآب", "tgt": "Père", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الابن", "tgt": "Fils", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "الابن الوحيد", "tgt": "Fils unique", "extra": "", "note": "", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "كلمة الله", "tgt": "Verbe de Dieu", "extra": "", "note": "Dans le contexte christologique ; éviter « Parole de Dieu » lorsqu'il s'agit du Logos.", "origin": "Lexique initial"}, {"cat": "Théologie", "src": "السيد المسيح", "tgt": "le Christ", "extra": "", "note": "« le Seigneur Jésus-Christ » dans un contexte solennel ; éviter « le Maître Christ ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "الصليب", "tgt": "la Croix", "extra": "", "note": "Majuscule pour la Croix du Christ ; minuscule dans les citations bibliques.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "الكفارة / التكفير / كفاري", "tgt": "expiation / expier / expiatoire", "extra": "", "note": "À distinguer de الفداء (Rédemption).", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "المصالحة / الصلح", "tgt": "réconciliation", "extra": "", "note": "« faire la paix » dans les citations (Col 1, 20).", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "البنوة لله", "tgt": "filiation divine", "extra": "", "note": "", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "الكلمة المتجسد", "tgt": "le Verbe incarné", "extra": "", "note": "Cohérent avec كلمة الله → Verbe de Dieu.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "تجسد وتأنس", "tgt": "s’est incarné et s’est fait homme", "extra": "", "note": "Formule du Symbole de foi.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "طبيعة المسيح الواحدة", "tgt": "l’unique nature du Christ", "extra": "", "note": "Christologie copte ; ne pas traduire par « une seule nature » sans contexte.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "الناموس / الشريعة", "tgt": "la Loi", "extra": "", "note": "Majuscule pour la Loi de Moïse ; « la loi du sacrifice » en minuscule.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "الوحي", "tgt": "l’Écriture", "extra": "", "note": "Quand le mot désigne le texte inspiré (« l’Écriture ne dit pas… ») ; « la Révélation » pour l’acte de Dieu.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "السقوط", "tgt": "la chute", "extra": "", "note": "", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Théologie", "src": "محب البشر", "tgt": "l’Ami du genre humain", "extra": "", "note": "Épithète liturgique copte.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "ذبيحة", "tgt": "sacrifice / victime", "extra": "", "note": "« victime » pour l’animal immolé.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "ذبيحة المحرقة / المحرقة", "tgt": "holocauste", "extra": "", "note": "", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "تقدمة القربان / التقدمة", "tgt": "offrande", "extra": "", "note": "*qorban* quand le texte commente le mot hébreu. Ne pas confondre avec القربان (pain eucharistique).", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "ذبيحة السلامة", "tgt": "sacrifice d’actions de grâces", "extra": "", "note": "Terme Segond 1910 (validé). Ne pas utiliser « sacrifice de paix ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "ذبيحة الخطية", "tgt": "sacrifice d’expiation", "extra": "", "note": "Terme Segond 1910 (validé). Ne pas utiliser « sacrifice pour le péché ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "ذبيحة الإثم", "tgt": "sacrifice de culpabilité", "extra": "", "note": "Terme Segond 1910 (validé). Ne pas utiliser « sacrifice de réparation ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "رائحة سرور / رائحة الرضا", "tgt": "odeur agréable", "extra": "", "note": "« sacrifice consumé d’odeur agréable » pour وقود رائحة سرور.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "الدقيق الفاخر", "tgt": "fleur de farine", "extra": "", "note": "", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "اللبان", "tgt": "oliban", "extra": "", "note": "À valider. Distingué de البخور (Encens) car le texte les oppose ; la Bible traduit « encens ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "خيمة الاجتماع", "tgt": "Tente de la Rencontre", "extra": "", "note": "À valider : Segond 1910 dit « tente d’assignation », jugé opaque pour des lycéens.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "المحلة", "tgt": "le camp", "extra": "", "note": "« hors du camp ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "الحجاب", "tgt": "le voile", "extra": "", "note": "", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "القدس / قدس الأقداس", "tgt": "le Lieu saint / le Saint des saints", "extra": "", "note": "Lieux du sanctuaire.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "قدس أقداس (qualificatif)", "tgt": "très saint", "extra": "", "note": "« C’est une chose très sainte » ; ne pas confondre avec le Saint des saints.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Bible / Culte de l’AT", "src": "شاقل القدس", "tgt": "sicle du sanctuaire", "extra": "", "note": "", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Clergé", "src": "رئيس الكهنة", "tgt": "grand prêtre", "extra": "", "note": "Préférer à « souverain sacrificateur » (validé).", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Clergé", "src": "الكهنوت العام", "tgt": "sacerdoce", "extra": "", "note": "Validé : « sacerdoce » seul, sans « commun » ni « royal ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Liturgie / Sacrements", "src": "الإفخارستيا", "tgt": "Eucharistie", "extra": "", "note": "« sacrifice de l’Eucharistie ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Liturgie", "src": "طقس", "tgt": "rite", "extra": "", "note": "« le rite de la Semaine Sainte » ; « rituel » pour un ensemble de cérémonies.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Liturgie", "src": "سر الرجعة", "tgt": "Prière du retour", "extra": "", "note": "Validé. Exception à la règle سر → Sacrement.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Liturgie", "src": "البولس (encensement)", "tgt": "encensement du Pauline (précédant la lecture de l’Épître de saint Paul)", "extra": "", "note": "Validé. Garder la précision entre parenthèses.", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Pères / Auteurs", "src": "معلمنا بولس الرسول", "tgt": "saint Paul, notre maître", "extra": "", "note": "Ou « l’apôtre Paul, notre maître ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Pères / Auteurs", "src": "العلامة أوريجانوس", "tgt": "le savant Origène", "extra": "", "note": "Jamais « saint Origène ».", "origin": "Leçon 13 – Entre symbole et réalité"}, {"cat": "Vierge Marie", "src": "السيدة العذراء", "tgt": "la Sainte Vierge", "extra": "", "note": "« Notre-Dame la Vierge » / « dame » seulement quand le texte joue sur le mot (validé).", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Vierge Marie", "src": "العذراء كل حين", "tgt": "la toujours Vierge", "extra": "", "note": "Titre dogmatique (Aeiparthénos).", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Vierge Marie", "src": "البتولية / بتول", "tgt": "la virginité / vierge", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Vierge Marie", "src": "كلية الطهر", "tgt": "toute pure", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Vierge Marie", "src": "ثيئوطوكوس", "tgt": "Théotokos", "extra": "", "note": "Cohérent avec والدة الإله → Mère de Dieu.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Vierge Marie", "src": "أم النور الحقيقي", "tgt": "Mère de la vraie Lumière", "extra": "", "note": "Variante de أم النور → Mère de la Lumière.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Théologie", "src": "الغير المحوي", "tgt": "l’Incontenable", "extra": "", "note": "Dieu que rien ne peut contenir.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Théologie", "src": "اللاهوت / الناسوت", "tgt": "la divinité / l’humanité (du Christ)", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Théologie", "src": "ملء الزمان", "tgt": "la plénitude des temps", "extra": "", "note": "Ga 4, 4.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Théologie", "src": "البشارة", "tgt": "l’Annonciation / l’annonce", "extra": "", "note": "Majuscule pour la fête et l’événement de Lc 1.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Théologie", "src": "الطغمات السمائية / السمائيون", "tgt": "les ordres célestes / les êtres célestes", "extra": "", "note": "الشاروبيم → chérubins ; السيرافيم → séraphins.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Théologie", "src": "أورشليم السمائية", "tgt": "la Jérusalem céleste", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Saints", "src": "النياحة / تنيح", "tgt": "la dormition / s’endormir dans le Seigneur", "extra": "", "note": "Pour la mort d’un saint ; « Dormition » avec majuscule pour la fête de la Vierge.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Saints", "src": "صعود جسد العذراء", "tgt": "l’Assomption (de son corps au ciel)", "extra": "", "note": "À distinguer de عيد الصعود → Ascension (du Christ).", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Saints", "src": "تجلي / ظهورات العذراء", "tgt": "apparition(s) de la Vierge", "extra": "", "note": "Ex. « apparition de Zeitoun ».", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Saints", "src": "الرفات", "tgt": "les reliques", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Église", "src": "مجمع أفسس المسكوني", "tgt": "le concile œcuménique d’Éphèse", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Église", "src": "الكنائس الرسولية", "tgt": "les Églises apostoliques", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Église", "src": "الخادم / المخدومون", "tgt": "le serviteur / les jeunes", "extra": "", "note": "Dans les consignes d’animation.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "مقدمة قانون الإيمان", "tgt": "l’Introduction au Symbole de foi", "extra": "", "note": "« Nous te magnifions, ô Mère de la vraie Lumière… »", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "مجمع القداس / مجمع التسبحة", "tgt": "le Commémoratif des saints (de la Divine Liturgie / de la Louange)", "extra": "", "note": "À valider (graphies liturgiques).", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "القسمة", "tgt": "la Fraction", "extra": "", "note": "Ex. « la Fraction de la fête de la Nativité ».", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "الذكصولوجيات", "tgt": "les Doxologies", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "المدائح", "tgt": "les cantiques", "extra": "", "note": "Validé. التراتيل → « les chants », pour éviter le doublon.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "الأبصلمودية (السنوية / الكيهكية)", "tgt": "la Psalmodie (annuelle / de Kiahk)", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "الأجبية", "tgt": "l’Agpia", "extra": "", "note": "Livre des Heures.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "صلوات السواعي / القطعة", "tgt": "les prières des Heures / le tropaire", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "الدفنار / القطمارس", "tgt": "le Difnar / le Katamaros", "extra": "", "note": "Livres liturgiques, termes conservés.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "الهيتينيات / الشيرات", "tgt": "les Hiténiat / les Chéréts", "extra": "", "note": "À valider (graphies liturgiques).", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "أرباع الناقوس", "tgt": "les quatrains du carillon", "extra": "", "note": "Validé.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "الابركسيس", "tgt": "les Actes des Apôtres (Praxis)", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "المرد / مردات الإنجيل", "tgt": "le répons / les répons de l’Évangile", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "رفع الحمل", "tgt": "la présentation de l’Agneau (présentation des pains de l’offrande : korban)", "extra": "", "note": "Validé.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Liturgie", "src": "المجمرة", "tgt": "l’encensoir", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Bible / Culte de l’AT", "src": "تابوت العهد / قسط المن", "tgt": "l’Arche d’alliance / l’urne de la manne", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Bible / Culte de l’AT", "src": "العليقة / باب المشرق", "tgt": "le Buisson ardent / la porte de l’Orient", "extra": "", "note": "Validé.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Bible / Culte de l’AT", "src": "عصا هرون", "tgt": "le bâton d’Aaron", "extra": "", "note": "À valider : Segond 1910 dit « la verge d’Aaron ».", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Calendrier liturgique", "src": "مسرى / بشنس / طوبة / بؤونة / برمهات", "tgt": "Mesra / Bashans / Toubah / Paoni / Baramhat", "extra": "", "note": "Mois coptes, graphie usuelle en français, cohérente avec Kiahk.", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}, {"cat": "Lieux", "src": "الجسمانية / القبر المقدس", "tgt": "Gethsémani / le Saint-Sépulcre", "extra": "", "note": "", "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"}], "conv": [{"k": "سِرّ", "rule": "Traduire par « Sacrement » dans le programme."}, {"k": "سِرّ الميرون", "rule": "Traduire par « Sacrement de la Confirmation »."}, {"k": "سِرّ المعمودية", "rule": "Traduire par « Sacrement du Baptême »."}, {"k": "Terminologie liturgique", "rule": "Privilégier les termes français orthodoxes consacrés lorsque l'équivalent existe."}, {"k": "Terme sans équivalent direct", "rule": "Éviter la traduction littérale ; conserver le terme technique et ajouter une explication si nécessaire."}, {"k": "Homogénéité", "rule": "Une même notion doit conserver la même traduction dans tout le programme, sauf raison contextuelle explicite."}, {"k": "Ajout futur", "rule": "Ajouter chaque nouveau terme dans l'onglet « Lexique » avec sa catégorie et, si nécessaire, une règle d'usage."}, {"k": "Version biblique", "rule": "Louis Segond 1910 légèrement modernisée : « le Seigneur » au lieu de « l’Éternel », « grand prêtre », termes du lexique."}, {"k": "Numérotation des Psaumes", "rule": "Numérotation Segond, et non celle de la Bible arabe Van Dyck (ex. Ps 51, 16 Van Dyck → Ps 51, 18 Segond)."}, {"k": "Noms des sacrifices (Lévitique)", "rule": "Termes Segond 1910 : holocauste, offrande, sacrifice d’actions de grâces, sacrifice d’expiation, sacrifice de culpabilité."}, {"k": "Références bibliques", "rule": "Abréviations françaises usuelles, au format « He 9, 22 »."}, {"k": "Erreurs manifestes de la source", "rule": "Corriger dans la traduction et le signaler en point à valider (ex. Zachée : « le quadruple », Lc 19, 8)."}, {"k": "سر hors contexte sacramentel", "rule": "Traduire selon le sens (« secret », « Prière du retour »…), voir la note de l’entrée سِرّ."}, {"k": "Prénoms des dialogues", "rule": "Garder les prénoms égyptiens d’origine, en évitant une graphie qui prête à sourire en français (ex. توتو → « Tati »)."}, {"k": "سيدة / عذراء", "rule": "Par défaut « la Sainte Vierge » ; « Notre-Dame » / « dame » seulement quand le texte joue sur le mot."}, {"k": "Mois coptes", "rule": "Graphie usuelle : Thout, Paopi, Hatour, Kiahk, Toubah, Amshir, Baramhat, Baramouda, Bashans, Paoni, Epip, Mesra."}]}
+{
+ "id": "catechese",
+ "name": {
+  "fr": "Catéchisme lycée – Diocèse copte",
+  "ar": "منهج التعليم المسيحي للثانوي – الإيبارشية القبطية"
+ },
+ "langs": [
+  "ar",
+  "fr"
+ ],
+ "profile": "religious",
+ "instr": "Tu traduis de l'arabe vers le français le programme de catéchisme destiné aux lycéens du Diocèse copte orthodoxe.\n- Traduis le sens, pas les mots. Jamais de traduction littérale lorsqu'elle produit un français artificiel, incorrect ou théologiquement imprécis.\n- Respecte la tradition copte orthodoxe : la terminologie théologique, liturgique, biblique et ecclésiologique doit être adaptée au contexte de l'Église copte orthodoxe.\n- Le lexique du projet est la source de vérité terminologique et prime sur tes préférences. Lorsqu'un terme du texte figure dans le lexique, utilise exactement la traduction validée. Ne remplace pas une traduction validée par une autre formulation sans raison.\n- Lorsqu'un nouveau terme théologique, liturgique ou ecclésiologique apparaît, identifie-le et propose une traduction pour le lexique.\n- Adapte le niveau de langue aux lycéens : français clair, fluide, moderne et pédagogique, sans être infantilisant ni universitaire.\n- Préserve le contenu théologique : n'ajoute aucune interprétation absente du texte original et ne supprime aucune notion, même répétitive ou difficile.\n- Conserve la structure : titres, sous-titres, paragraphes, listes, questions, exercices et références bibliques.\n- Pour les termes sans équivalent français exact, utilise le terme traditionnel approprié ou une formulation contextualisée.\n- Noms bibliques : formes françaises usuelles (Jésus, Moïse, Abraham, Pierre, Paul, Jean…).\n- En cas d'ambiguïté théologique ou terminologique réelle, ne tranche pas arbitrairement : signale un point à valider avec la traduction proposée et l'alternative éventuelle.\n- Style : théologique sans être universitaire, pédagogique sans être infantilisant, spirituel sans être excessivement lyrique, fidèle sans être littéral, naturel sans perdre la précision doctrinale.\n- Évite : tournures arabes transposées, phrases trop longues, répétitions artificielles, archaïsmes inutiles, anglicismes, traductions littérales de concepts théologiques.\n- Priorité : fidélité au sens → exactitude théologique → respect du lexique → clarté pédagogique → fluidité du français.",
+ "lex": [
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "سِرّ",
+   "tgt": "Sacrement",
+   "extra": "",
+   "note": "Ne pas traduire littéralement par « mystère » dans le programme. Exception : hors contexte sacramentel, سر = « secret » (ex. سر قوة الذبيحة → « le secret de la force du sacrifice » ; سر الرجعة → « Prière du retour »).",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "سِرّ الميرون",
+   "tgt": "Sacrement de la Confirmation",
+   "extra": "Myron",
+   "note": "Traduction retenue pour le programme.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "سِرّ المعمودية",
+   "tgt": "Sacrement du Baptême",
+   "extra": "",
+   "note": "Traduction retenue pour le programme.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "الأسرار المقدسة",
+   "tgt": "Sacrements",
+   "extra": "",
+   "note": "Selon le contexte : « les Saints Sacrements » peut être utilisé.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "القداس الإلهي",
+   "tgt": "Divine Liturgie",
+   "extra": "",
+   "note": "Privilégier « Divine Liturgie » dans le contexte copte orthodoxe.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "التناول",
+   "tgt": "Sainte Communion",
+   "extra": "",
+   "note": "Selon la phrase : « recevoir la Sainte Communion ».",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "الاعتراف",
+   "tgt": "Confession",
+   "extra": "",
+   "note": "Dans le contexte du sacrement de pénitence.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "سر التوبة والاعتراف",
+   "tgt": "Sacrement de la Pénitence et de la Confession",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Clergé",
+   "src": "الكاهن",
+   "tgt": "Prêtre",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Clergé",
+   "src": "الأسقف",
+   "tgt": "Évêque",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Clergé",
+   "src": "البابا",
+   "tgt": "Pape",
+   "extra": "",
+   "note": "Dans l'Église copte orthodoxe : le Pape est aussi Patriarche d'Alexandrie.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Clergé",
+   "src": "قداسة البابا",
+   "tgt": "Sa Sainteté le Pape",
+   "extra": "",
+   "note": "Formule protocolaire.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Clergé",
+   "src": "الشماس",
+   "tgt": "Diacre",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Clergé",
+   "src": "الشمامسة",
+   "tgt": "Diacres",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église / Architecture",
+   "src": "المذبح",
+   "tgt": "Autel",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église / Architecture",
+   "src": "الهيكل",
+   "tgt": "Sanctuaire",
+   "extra": "",
+   "note": "Dans le contexte liturgique. Exception validée : « Temple » quand il s’agit du Temple de Jérusalem.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église / Architecture",
+   "src": "خورس الشمامسة",
+   "tgt": "Chœur des diacres",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église / Architecture",
+   "src": "الأيقونة",
+   "tgt": "Icône",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église / Architecture",
+   "src": "الأيقونسطاس",
+   "tgt": "Iconostase",
+   "extra": "",
+   "note": "Terme français consacré.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "البخور",
+   "tgt": "Encens",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "رفع بخور عشية",
+   "tgt": "Office de l'encens du soir",
+   "extra": "",
+   "note": "Terminologie à harmoniser dans l'ensemble du programme.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "رفع بخور باكر",
+   "tgt": "Office de l'encens du matin",
+   "extra": "",
+   "note": "Terminologie à harmoniser dans l'ensemble du programme.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "اللحن",
+   "tgt": "Hymne liturgique",
+   "extra": "",
+   "note": "Selon le contexte, peut aussi désigner une mélodie liturgique.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "إبصالية",
+   "tgt": "Ipsalie",
+   "extra": "",
+   "note": "Terme liturgique spécifique, à conserver comme terme technique.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "ثيؤطوكية",
+   "tgt": "Théotokie",
+   "extra": "",
+   "note": "Hymne liturgique consacrée à la Mère de Dieu.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "تسبحة",
+   "tgt": "Louange",
+   "extra": "",
+   "note": "La traduction dépend du contexte ; ne pas systématiquement traduire par « doxologie ».",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "تسبحة كيهك",
+   "tgt": "Tasbīḥa de Kiahk",
+   "extra": "",
+   "note": "Conserver le terme spécifique et expliquer si nécessaire.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "قانون الإيمان",
+   "tgt": "Symbole de foi",
+   "extra": "",
+   "note": "Ne pas traduire littéralement par « loi de la foi ».",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église",
+   "src": "الكنيسة القبطية الأرثوذكسية",
+   "tgt": "Église copte orthodoxe",
+   "extra": "",
+   "note": "Dénomination à harmoniser partout dans le programme.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Église",
+   "src": "المجمع المقدس",
+   "tgt": "Saint-Synode",
+   "extra": "",
+   "note": "Terme ecclésiologique.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "التدبير",
+   "tgt": "Économie du salut",
+   "extra": "",
+   "note": "Dans le contexte théologique ; ne pas traduire par « gestion » ou « administration ».",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "التجسد",
+   "tgt": "Incarnation",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الفداء",
+   "tgt": "Rédemption",
+   "extra": "",
+   "note": "Selon le contexte théologique.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "والدة الإله",
+   "tgt": "Mère de Dieu",
+   "extra": "Théotokos",
+   "note": "Terme dogmatique.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "القديسة العذراء مريم",
+   "tgt": "Sainte Vierge Marie",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "أم النور",
+   "tgt": "Mère de la Lumière",
+   "extra": "",
+   "note": "Titre traditionnel de la Vierge Marie.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "شفاعة",
+   "tgt": "Intercession",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "شفيعة",
+   "tgt": "Intercesseur / intercession",
+   "extra": "",
+   "note": "À adapter selon le contexte grammatical.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Saints",
+   "src": "القديس",
+   "tgt": "Saint",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Saints",
+   "src": "الشهيد",
+   "tgt": "Martyr",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "التقليد",
+   "tgt": "Tradition",
+   "extra": "",
+   "note": "Selon le contexte : « Sainte Tradition ».",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "التقليد الكنسي",
+   "tgt": "Tradition de l'Église",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "الآباء",
+   "tgt": "Pères de l'Église",
+   "extra": "",
+   "note": "Selon le contexte.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "أقوال الآباء",
+   "tgt": "Enseignements des Pères",
+   "extra": "",
+   "note": "Peut aussi être « paroles des Pères » selon le texte.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "النسك",
+   "tgt": "Ascèse",
+   "extra": "",
+   "note": "À distinguer de « rite ».",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "الجهاد الروحي",
+   "tgt": "Combat spirituel",
+   "extra": "",
+   "note": "Ne pas conserver « jihad » en français.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "التوبة",
+   "tgt": "Repentance / pénitence",
+   "extra": "",
+   "note": "Le choix dépend du contexte.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "الصلاة",
+   "tgt": "Prière",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Spiritualité",
+   "src": "الصوم",
+   "tgt": "Jeûne",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "الصوم الكبير",
+   "tgt": "Grand Carême",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "أسبوع الآلام",
+   "tgt": "Semaine Sainte",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "أحد الشعانين",
+   "tgt": "Dimanche des Rameaux",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "خميس العهد",
+   "tgt": "Jeudi Saint",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "الجمعة العظيمة",
+   "tgt": "Vendredi Saint",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "سبت النور",
+   "tgt": "Samedi Saint",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "عيد القيامة",
+   "tgt": "Fête de la Résurrection / Pâques",
+   "extra": "",
+   "note": "Choix selon le contexte.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "عيد الميلاد",
+   "tgt": "Fête de la Nativité / Noël",
+   "extra": "",
+   "note": "Choix selon le contexte.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "عيد الغطاس",
+   "tgt": "Fête de la Théophanie",
+   "extra": "",
+   "note": "« Épiphanie » peut être utilisé selon le contexte ; « Théophanie » est plus précis dans le contexte orthodoxe.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "عيد الصعود",
+   "tgt": "Fête de l'Ascension",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "عيد العنصرة",
+   "tgt": "Pentecôte",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الغطاس",
+   "tgt": "Théophanie",
+   "extra": "",
+   "note": "Selon le contexte, peut désigner la fête du Baptême du Christ.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الظهور الإلهي",
+   "tgt": "Théophanie",
+   "extra": "",
+   "note": "Manifestation divine.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "حلول الروح القدس",
+   "tgt": "Descente du Saint-Esprit",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الروح القدس",
+   "tgt": "Saint-Esprit",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الثالوث القدوس",
+   "tgt": "Sainte Trinité",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الآب",
+   "tgt": "Père",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الابن",
+   "tgt": "Fils",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الابن الوحيد",
+   "tgt": "Fils unique",
+   "extra": "",
+   "note": "",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "كلمة الله",
+   "tgt": "Verbe de Dieu",
+   "extra": "",
+   "note": "Dans le contexte christologique ; éviter « Parole de Dieu » lorsqu'il s'agit du Logos.",
+   "origin": "Lexique initial"
+  },
+  {
+   "cat": "Théologie",
+   "src": "السيد المسيح",
+   "tgt": "le Christ",
+   "extra": "",
+   "note": "« le Seigneur Jésus-Christ » dans un contexte solennel ; éviter « le Maître Christ ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الصليب",
+   "tgt": "la Croix",
+   "extra": "",
+   "note": "Majuscule pour la Croix du Christ ; minuscule dans les citations bibliques.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الكفارة / التكفير / كفاري",
+   "tgt": "expiation / expier / expiatoire",
+   "extra": "",
+   "note": "À distinguer de الفداء (Rédemption).",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "المصالحة / الصلح",
+   "tgt": "réconciliation",
+   "extra": "",
+   "note": "« faire la paix » dans les citations (Col 1, 20).",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "البنوة لله",
+   "tgt": "filiation divine",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الكلمة المتجسد",
+   "tgt": "le Verbe incarné",
+   "extra": "",
+   "note": "Cohérent avec كلمة الله → Verbe de Dieu.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "تجسد وتأنس",
+   "tgt": "s’est incarné et s’est fait homme",
+   "extra": "",
+   "note": "Formule du Symbole de foi.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "طبيعة المسيح الواحدة",
+   "tgt": "l’unique nature du Christ",
+   "extra": "",
+   "note": "Christologie copte ; ne pas traduire par « une seule nature » sans contexte.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الناموس / الشريعة",
+   "tgt": "la Loi",
+   "extra": "",
+   "note": "Majuscule pour la Loi de Moïse ; « la loi du sacrifice » en minuscule.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الوحي",
+   "tgt": "l’Écriture",
+   "extra": "",
+   "note": "Quand le mot désigne le texte inspiré (« l’Écriture ne dit pas… ») ; « la Révélation » pour l’acte de Dieu.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "السقوط",
+   "tgt": "la chute",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Théologie",
+   "src": "محب البشر",
+   "tgt": "l’Ami du genre humain",
+   "extra": "",
+   "note": "Épithète liturgique copte.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "ذبيحة",
+   "tgt": "sacrifice / victime",
+   "extra": "",
+   "note": "« victime » pour l’animal immolé.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "ذبيحة المحرقة / المحرقة",
+   "tgt": "holocauste",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "تقدمة القربان / التقدمة",
+   "tgt": "offrande",
+   "extra": "",
+   "note": "*qorban* quand le texte commente le mot hébreu. Ne pas confondre avec القربان (pain eucharistique).",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "ذبيحة السلامة",
+   "tgt": "sacrifice d’actions de grâces",
+   "extra": "",
+   "note": "Terme Segond 1910 (validé). Ne pas utiliser « sacrifice de paix ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "ذبيحة الخطية",
+   "tgt": "sacrifice d’expiation",
+   "extra": "",
+   "note": "Terme Segond 1910 (validé). Ne pas utiliser « sacrifice pour le péché ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "ذبيحة الإثم",
+   "tgt": "sacrifice de culpabilité",
+   "extra": "",
+   "note": "Terme Segond 1910 (validé). Ne pas utiliser « sacrifice de réparation ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "رائحة سرور / رائحة الرضا",
+   "tgt": "odeur agréable",
+   "extra": "",
+   "note": "« sacrifice consumé d’odeur agréable » pour وقود رائحة سرور.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "الدقيق الفاخر",
+   "tgt": "fleur de farine",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "اللبان",
+   "tgt": "oliban",
+   "extra": "",
+   "note": "À valider. Distingué de البخور (Encens) car le texte les oppose ; la Bible traduit « encens ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "خيمة الاجتماع",
+   "tgt": "Tente de la Rencontre",
+   "extra": "",
+   "note": "À valider : Segond 1910 dit « tente d’assignation », jugé opaque pour des lycéens.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "المحلة",
+   "tgt": "le camp",
+   "extra": "",
+   "note": "« hors du camp ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "الحجاب",
+   "tgt": "le voile",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "القدس / قدس الأقداس",
+   "tgt": "le Lieu saint / le Saint des saints",
+   "extra": "",
+   "note": "Lieux du sanctuaire.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "قدس أقداس (qualificatif)",
+   "tgt": "très saint",
+   "extra": "",
+   "note": "« C’est une chose très sainte » ; ne pas confondre avec le Saint des saints.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "شاقل القدس",
+   "tgt": "sicle du sanctuaire",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Clergé",
+   "src": "رئيس الكهنة",
+   "tgt": "grand prêtre",
+   "extra": "",
+   "note": "Préférer à « souverain sacrificateur » (validé).",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Clergé",
+   "src": "الكهنوت العام",
+   "tgt": "sacerdoce",
+   "extra": "",
+   "note": "Validé : « sacerdoce » seul, sans « commun » ni « royal ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Liturgie / Sacrements",
+   "src": "الإفخارستيا",
+   "tgt": "Eucharistie",
+   "extra": "",
+   "note": "« sacrifice de l’Eucharistie ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "طقس",
+   "tgt": "rite",
+   "extra": "",
+   "note": "« le rite de la Semaine Sainte » ; « rituel » pour un ensemble de cérémonies.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "سر الرجعة",
+   "tgt": "Prière du retour",
+   "extra": "",
+   "note": "Validé. Exception à la règle سر → Sacrement.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "البولس (encensement)",
+   "tgt": "encensement du Pauline (précédant la lecture de l’Épître de saint Paul)",
+   "extra": "",
+   "note": "Validé. Garder la précision entre parenthèses.",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Pères / Auteurs",
+   "src": "معلمنا بولس الرسول",
+   "tgt": "saint Paul, notre maître",
+   "extra": "",
+   "note": "Ou « l’apôtre Paul, notre maître ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Pères / Auteurs",
+   "src": "العلامة أوريجانوس",
+   "tgt": "le savant Origène",
+   "extra": "",
+   "note": "Jamais « saint Origène ».",
+   "origin": "Leçon 13 – Entre symbole et réalité"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "السيدة العذراء",
+   "tgt": "la Sainte Vierge",
+   "extra": "",
+   "note": "« Notre-Dame la Vierge » / « dame » seulement quand le texte joue sur le mot (validé).",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "العذراء كل حين",
+   "tgt": "la toujours Vierge",
+   "extra": "",
+   "note": "Titre dogmatique (Aeiparthénos).",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "البتولية / بتول",
+   "tgt": "la virginité / vierge",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "كلية الطهر",
+   "tgt": "toute pure",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "ثيئوطوكوس",
+   "tgt": "Théotokos",
+   "extra": "",
+   "note": "Cohérent avec والدة الإله → Mère de Dieu.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Vierge Marie",
+   "src": "أم النور الحقيقي",
+   "tgt": "Mère de la vraie Lumière",
+   "extra": "",
+   "note": "Variante de أم النور → Mère de la Lumière.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الغير المحوي",
+   "tgt": "l’Incontenable",
+   "extra": "",
+   "note": "Dieu que rien ne peut contenir.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Théologie",
+   "src": "اللاهوت / الناسوت",
+   "tgt": "la divinité / l’humanité (du Christ)",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Théologie",
+   "src": "ملء الزمان",
+   "tgt": "la plénitude des temps",
+   "extra": "",
+   "note": "Ga 4, 4.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Théologie",
+   "src": "البشارة",
+   "tgt": "l’Annonciation / l’annonce",
+   "extra": "",
+   "note": "Majuscule pour la fête et l’événement de Lc 1.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Théologie",
+   "src": "الطغمات السمائية / السمائيون",
+   "tgt": "les ordres célestes / les êtres célestes",
+   "extra": "",
+   "note": "الشاروبيم → chérubins ; السيرافيم → séraphins.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Théologie",
+   "src": "أورشليم السمائية",
+   "tgt": "la Jérusalem céleste",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Saints",
+   "src": "النياحة / تنيح",
+   "tgt": "la dormition / s’endormir dans le Seigneur",
+   "extra": "",
+   "note": "Pour la mort d’un saint ; « Dormition » avec majuscule pour la fête de la Vierge.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Saints",
+   "src": "صعود جسد العذراء",
+   "tgt": "l’Assomption (de son corps au ciel)",
+   "extra": "",
+   "note": "À distinguer de عيد الصعود → Ascension (du Christ).",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Saints",
+   "src": "تجلي / ظهورات العذراء",
+   "tgt": "apparition(s) de la Vierge",
+   "extra": "",
+   "note": "Ex. « apparition de Zeitoun ».",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Saints",
+   "src": "الرفات",
+   "tgt": "les reliques",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Église",
+   "src": "مجمع أفسس المسكوني",
+   "tgt": "le concile œcuménique d’Éphèse",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Église",
+   "src": "الكنائس الرسولية",
+   "tgt": "les Églises apostoliques",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Église",
+   "src": "الخادم / المخدومون",
+   "tgt": "le serviteur / les jeunes",
+   "extra": "",
+   "note": "Dans les consignes d’animation.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "مقدمة قانون الإيمان",
+   "tgt": "l’Introduction au Symbole de foi",
+   "extra": "",
+   "note": "« Nous te magnifions, ô Mère de la vraie Lumière… »",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "مجمع القداس / مجمع التسبحة",
+   "tgt": "le Commémoratif des saints (de la Divine Liturgie / de la Louange)",
+   "extra": "",
+   "note": "À valider (graphies liturgiques).",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "القسمة",
+   "tgt": "la Fraction",
+   "extra": "",
+   "note": "Ex. « la Fraction de la fête de la Nativité ».",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "الذكصولوجيات",
+   "tgt": "les Doxologies",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "المدائح",
+   "tgt": "les cantiques",
+   "extra": "",
+   "note": "Validé. التراتيل → « les chants », pour éviter le doublon.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "الأبصلمودية (السنوية / الكيهكية)",
+   "tgt": "la Psalmodie (annuelle / de Kiahk)",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "الأجبية",
+   "tgt": "l’Agpia",
+   "extra": "",
+   "note": "Livre des Heures.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "صلوات السواعي / القطعة",
+   "tgt": "les prières des Heures / le tropaire",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "الدفنار / القطمارس",
+   "tgt": "le Difnar / le Katamaros",
+   "extra": "",
+   "note": "Livres liturgiques, termes conservés.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "الهيتينيات / الشيرات",
+   "tgt": "les Hiténiat / les Chéréts",
+   "extra": "",
+   "note": "À valider (graphies liturgiques).",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "أرباع الناقوس",
+   "tgt": "les quatrains du carillon",
+   "extra": "",
+   "note": "Validé.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "الابركسيس",
+   "tgt": "les Actes des Apôtres (Praxis)",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "المرد / مردات الإنجيل",
+   "tgt": "le répons / les répons de l’Évangile",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "رفع الحمل",
+   "tgt": "la présentation de l’Agneau (présentation des pains de l’offrande : korban)",
+   "extra": "",
+   "note": "Validé.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Liturgie",
+   "src": "المجمرة",
+   "tgt": "l’encensoir",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "تابوت العهد / قسط المن",
+   "tgt": "l’Arche d’alliance / l’urne de la manne",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "العليقة / باب المشرق",
+   "tgt": "le Buisson ardent / la porte de l’Orient",
+   "extra": "",
+   "note": "Validé.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Bible / Culte de l’AT",
+   "src": "عصا هرون",
+   "tgt": "le bâton d’Aaron",
+   "extra": "",
+   "note": "À valider : Segond 1910 dit « la verge d’Aaron ».",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Calendrier liturgique",
+   "src": "مسرى / بشنس / طوبة / بؤونة / برمهات",
+   "tgt": "Mesra / Bashans / Toubah / Paoni / Baramhat",
+   "extra": "",
+   "note": "Mois coptes, graphie usuelle en français, cohérente avec Kiahk.",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  },
+  {
+   "cat": "Lieux",
+   "src": "الجسمانية / القبر المقدس",
+   "tgt": "Gethsémani / le Saint-Sépulcre",
+   "extra": "",
+   "note": "",
+   "origin": "Leçon 13 – La Reine de beauté du monde et du Royaume"
+  }
+ ],
+ "conv": [
+  {
+   "k": "سِرّ",
+   "rule": "Traduire par « Sacrement » dans le programme."
+  },
+  {
+   "k": "سِرّ الميرون",
+   "rule": "Traduire par « Sacrement de la Confirmation »."
+  },
+  {
+   "k": "سِرّ المعمودية",
+   "rule": "Traduire par « Sacrement du Baptême »."
+  },
+  {
+   "k": "Terminologie liturgique",
+   "rule": "Privilégier les termes français orthodoxes consacrés lorsque l'équivalent existe."
+  },
+  {
+   "k": "Terme sans équivalent direct",
+   "rule": "Éviter la traduction littérale ; conserver le terme technique et ajouter une explication si nécessaire."
+  },
+  {
+   "k": "Homogénéité",
+   "rule": "Une même notion doit conserver la même traduction dans tout le programme, sauf raison contextuelle explicite."
+  },
+  {
+   "k": "Ajout futur",
+   "rule": "Ajouter chaque nouveau terme dans l'onglet « Lexique » avec sa catégorie et, si nécessaire, une règle d'usage."
+  },
+  {
+   "k": "Version biblique",
+   "rule": "Louis Segond 1910 légèrement modernisée : « le Seigneur » au lieu de « l’Éternel », « grand prêtre », termes du lexique."
+  },
+  {
+   "k": "Numérotation des Psaumes",
+   "rule": "Numérotation Segond, et non celle de la Bible arabe Van Dyck (ex. Ps 51, 16 Van Dyck → Ps 51, 18 Segond)."
+  },
+  {
+   "k": "Noms des sacrifices (Lévitique)",
+   "rule": "Termes Segond 1910 : holocauste, offrande, sacrifice d’actions de grâces, sacrifice d’expiation, sacrifice de culpabilité."
+  },
+  {
+   "k": "Références bibliques",
+   "rule": "Abréviations françaises usuelles, au format « He 9, 22 »."
+  },
+  {
+   "k": "Erreurs manifestes de la source",
+   "rule": "Corriger dans la traduction et le signaler en point à valider (ex. Zachée : « le quadruple », Lc 19, 8)."
+  },
+  {
+   "k": "سر hors contexte sacramentel",
+   "rule": "Traduire selon le sens (« secret », « Prière du retour »…), voir la note de l’entrée سِرّ."
+  },
+  {
+   "k": "Prénoms des dialogues",
+   "rule": "Garder les prénoms égyptiens d’origine, en évitant une graphie qui prête à sourire en français (ex. توتو → « Tati »)."
+  },
+  {
+   "k": "سيدة / عذراء",
+   "rule": "Par défaut « la Sainte Vierge » ; « Notre-Dame » / « dame » seulement quand le texte joue sur le mot."
+  },
+  {
+   "k": "Mois coptes",
+   "rule": "Graphie usuelle : Thout, Paopi, Hatour, Kiahk, Toubah, Amshir, Baramhat, Baramouda, Bashans, Paoni, Epip, Mesra."
+  }
+ ],
+ "style": "- Tutoiement : quand le texte s'adresse au lecteur ou à l'animateur, écris à la 2e personne du singulier (« tu », « ton », impératif : « gonfle », « trouve », « raconte »), jamais « vous », sauf si le texte s'adresse explicitement à un groupe (« Écoutez, mes frères… »).\n- Rubriques de la fiche, toujours traduites ainsi : اسم الموضوع / الموضوع = Thème ; الآية / آية الحفظ = Verset clé ; الأهداف / الهدف = Objectifs ; عناصر الموضوع = Plan de la leçon ; مقدمة تشويقية = Accroche (avec son numéro : « Accroche (1) ») ; قصة = Histoire ; نشاط = Activité ; الأدوات = Matériel ; التحضير = Préparation ; طريقة العمل / التنفيذ = Déroulement ; تدريب = Exercice ; صلاة = Prière ; الدرس = Leçon. Les grandes parties أولاً، ثانياً، ثالثاً deviennent « I. », « II. », « III. » suivis du titre.\n- Le texte vient souvent d'un scan (OCR) : ne traduis jamais les numéros de page, en-têtes ou pieds de page répétés, lettres isolées, symboles parasites ni cadres décoratifs. Corrige silencieusement les lettres mal lues quand le contexte rend le sens évident (par exemple « ماءك » mal lu en « نارك » dans « تركت ماءك يا ينبوع الماء الحي » : « ton eau »).\n- Citations bibliques : guillemets français « … » et référence abrégée française après la citation, au format « (Rm 4, 21) », « (2 P 3, 9) », « (1 Jn 2, 25) » ; livres deutérocanoniques : Si, Sg, Tb, Jdt, 1 M, 2 M, Ba. Jamais d'abréviations anglaises (Jas, Rom, Thess, Tim).\n- Phrases courtes et naturelles : coupe les longues phrases arabes, supprime les « و » de liaison superflus, préfère les tournures orales vivantes (« Sérieux ? », « C'est pas possible ! ») quand l'original est familier.\n- Titres : style français (« Leçon 6 — Tes droits : connais-les et ne les abandonne pas »), sans majuscule à chaque mot.",
+ "examples": [
+  "Préparation : gonfle les ballons sans les remplir complètement et noue-les. Colle ensuite 5 cm de ruban adhésif à l'arrière de l'un des deux, et appuie bien sur le ruban.",
+  "Le ruban adhésif : ce sont les promesses de Dieu. Elles nous protègent et nous aident à traverser les épreuves, les difficultés et les problèmes que nous rencontrons.",
+  "Raconte cette histoire, puis laisse aux jeunes un temps de recueillement devant Dieu. Que chacun se demande : Est-ce que j'ai confiance en lui ? Est-ce que j'ai confiance en ses promesses ?",
+  "Activité : Trouve dans la Bible un personnage qui a douté des promesses de Dieu parce que leur réalisation tardait (Sara, la femme d'Abraham).",
+  "Verset clé : « …ayant la pleine conviction que ce qu'il promet il peut aussi l'accomplir » (Rm 4, 21).",
+  "Tu as peut-être un proche malade qui a besoin de guérison, et tu insistes dans ta prière. Le Seigneur peut tarder à répondre, jusqu'à la plénitude des temps qu'il a fixée pour ce malade, selon sa sagesse dans le choix des moments."
+ ]
+}
