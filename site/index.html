@@ -503,7 +503,7 @@ const PROFILES={
 const FONTS=["Noto Naskh Arabic","Noto Sans Arabic","Amiri","IBM Plex Sans Arabic","Cairo"];
 
 const I18N={
-fr:{ocrBtn:"Extraire le texte (OCR)",ocrDone:"Texte lu : {n} blocs. Corrigez-le directement ci-dessous si besoin, puis traduisez-le ou téléchargez-le avec « Exporter ».",ocrMode:"Lecture des scans",ocrFast:"Rapide (dans le navigateur, hors connexion)",ocrAI:"Précise (IA OVH, recommandée pour l'arabe)",ocrFallback:"Lecture IA indisponible : lecture rapide utilisée.",engVisionT:"Lecture précise des scans (IA)",noVision:"aucun modèle d'images disponible : la lecture rapide est utilisée",navSettings:"Réglages",homeHelloAnon:"Bienvenue",savedLocal:"Enregistré sur cet ordinateur",setRubric:"Moteur et partage",setIntro:"La traduction utilise une IA open source gratuite d'OVHcloud, sans clé ni compte. La lecture des scans se fait dans votre navigateur.",engExplain:"Chaque ordinateur a son propre quota gratuit : 2 requêtes par minute et par modèle. Le site répartit le travail entre les modèles et met en file d'attente : un long document se traduit à la suite, sans erreur.",engCap:"Capacité de cet ordinateur : environ {n} paragraphes ou pages par minute.",engModelsT:"Modèles utilisés",engAddr:"Adresse :",engTestBtn:"Tester la traduction",testing:"Test en cours…",testOk:"Fonctionne ({s} s, {m}) : {r}",stOk:"Disponible",stBlocked:"Bloqué par le navigateur",stUnknown:"Pas encore testé",stDead:"indisponible",blockedNote:"OVH refuse les appels venant directement d'un navigateur. Il faut alors un relais : demandez à l'administrateur de le configurer ci-contre.",lexShareT:"Partager le lexique",lexShareP:"Les ajouts au lexique sont enregistrés sur cet ordinateur. Pour les partager avec toute l'équipe : Lexique, Exporter le lexique, puis l'administrateur remplace le fichier site/data/catechese.json sur GitHub (ou envoie l'Excel à Claude pour la conversion).",relayT:"Avancé : relais",relayP:"À utiliser seulement si OVH bloque les appels depuis le navigateur ou pour un autre fournisseur compatible OpenAI sans clé.",relayL:"Adresse du relais (compatible OpenAI, se termine par /v1)",eOvhBlocked:"Le moteur OVH n'accepte pas les appels depuis ce navigateur. Voir Réglages.",eOvhNoModel:"Aucun modèle OVH n'est disponible pour le moment. Réessayez plus tard.",queueHint:"File d'attente : le quota gratuit est de 2 requêtes par minute et par modèle, la traduction reprend toute seule.",brandSub:"Traduction",navHome:"Accueil",navLex:"Lexique",navTeam:"Équipe",navAccount:"Mon compte",logout:"Se déconnecter",
+fr:{bibleCheck:"Recherche des versets bibliques…",bibleChip:"{n} référence(s) biblique(s) vérifiée(s), texte Louis Segond",bibleFixed:"{n} référence(s) corrigée(s)",refsFixed:"{n} référence(s) biblique(s) corrigée(s) après lecture (numéros inversés ou mal lus)",ocrBtn:"Extraire le texte (OCR)",ocrDone:"Texte lu : {n} blocs. Corrigez-le directement ci-dessous si besoin, puis traduisez-le ou téléchargez-le avec « Exporter ».",ocrMode:"Lecture des scans",ocrFast:"Rapide (dans le navigateur, hors connexion)",ocrAI:"Précise (IA OVH, recommandée pour l'arabe)",ocrFallback:"Lecture IA indisponible : lecture rapide utilisée.",engVisionT:"Lecture précise des scans (IA)",noVision:"aucun modèle d'images disponible : la lecture rapide est utilisée",navSettings:"Réglages",homeHelloAnon:"Bienvenue",savedLocal:"Enregistré sur cet ordinateur",setRubric:"Moteur et partage",setIntro:"La traduction utilise une IA open source gratuite d'OVHcloud, sans clé ni compte. La lecture des scans se fait dans votre navigateur.",engExplain:"Chaque ordinateur a son propre quota gratuit : 2 requêtes par minute et par modèle. Le site traduit plusieurs passages en parallèle sur tous les modèles, puis met en file d'attente : un long document se traduit à la suite, sans erreur. Les citations bibliques sont reprises mot pour mot de la Louis Segond 1910.",engCap:"Capacité de cet ordinateur : environ {n} paragraphes ou pages par minute.",engModelsT:"Modèles utilisés",engAddr:"Adresse :",engTestBtn:"Tester la traduction",testing:"Test en cours…",testOk:"Fonctionne ({s} s, {m}) : {r}",stOk:"Disponible",stBlocked:"Bloqué par le navigateur",stUnknown:"Pas encore testé",stDead:"indisponible",blockedNote:"OVH refuse les appels venant directement d'un navigateur. Il faut alors un relais : demandez à l'administrateur de le configurer ci-contre.",lexShareT:"Partager le lexique",lexShareP:"Les ajouts au lexique sont enregistrés sur cet ordinateur. Pour les partager avec toute l'équipe : Lexique, Exporter le lexique, puis l'administrateur remplace le fichier site/data/catechese.json sur GitHub (ou envoie l'Excel à Claude pour la conversion).",relayT:"Avancé : relais",relayP:"À utiliser seulement si OVH bloque les appels depuis le navigateur ou pour un autre fournisseur compatible OpenAI sans clé.",relayL:"Adresse du relais (compatible OpenAI, se termine par /v1)",eOvhBlocked:"Le moteur OVH n'accepte pas les appels depuis ce navigateur. Voir Réglages.",eOvhNoModel:"Aucun modèle OVH n'est disponible pour le moment. Réessayez plus tard.",queueHint:"File d'attente : le quota gratuit est de 2 requêtes par minute et par modèle, la traduction reprend toute seule.",brandSub:"Traduction",navHome:"Accueil",navLex:"Lexique",navTeam:"Équipe",navAccount:"Mon compte",logout:"Se déconnecter",
 loginSide:"Service de traduction de l'église · arabe ↔ français et plus de 80 langues",lgUser:"Identifiant",lgPass:"Mot de passe",lgPass2:"Confirmer le mot de passe",lgGo:"Se connecter",lgSetupGo:"Créer le compte administrateur",lgTitle:"Connexion",lgSetupTitle:"Bienvenue",lgIntro:"Utilisez l'identifiant donné par l'administrateur.",lgSetupIntro:"Le site est neuf : créez le compte administrateur. Vous ajouterez ensuite les traducteurs.",lgRubric:"SMSM Traduction",lgBad:"Identifiant ou mot de passe incorrect.",lgWait:"Trop d'essais. Patientez 15 minutes.",lgMismatch:"Les deux mots de passe sont différents.",lgShort:"Identifiant : minuscules, chiffres, . _ - ; mot de passe : 10 caractères minimum.",
 homeHello:"Bonjour {u}",homeIntro:"Déposez un document ou collez un texte : il est traduit gratuitement avec le lexique du diocèse, puis vous relisez avant de télécharger.",homeFolio:"Exemple de traduction validée",homeLex:"{n} termes au lexique",actDocT:"Traduire un document",actDocP:"Word, PowerPoint et Excel ressortent avec la même mise en page. Aussi PDF et scans.",actTextT:"Traduire un texte",actTextP:"Collez un passage, une annonce ou un message et corrigez directement le résultat.",
 pr1:"Déposer",pr1d:"Un fichier Word, PowerPoint, Excel, PDF ou une photo.",pr2:"Régler",pr2d:"Langues et profil ; le lexique du projet s'applique tout seul.",pr3:"Relire",pr3d:"Corrigez chaque paragraphe, validez les points signalés.",pr4:"Télécharger",pr4d:"Le fichier ressort dans son format, prêt à imprimer.",
@@ -521,7 +521,7 @@ ckNumOk:"Nombres identiques",ckNumMiss:"Nombres à vérifier : {x}",ckParOk:"Par
 vOk:"Aucun problème relevé",vReview:"À relire",vBad:"Problèmes importants",sev:{haute:"Élevée",moyenne:"Moyenne",basse:"Faible"},cat:{omission:"Omission",ajout:"Ajout",sens:"Sens",terminologie:"Terminologie",nom_propre:"Nom propre",nombre_date:"Nombre ou date",grammaire:"Grammaire",registre:"Registre",typographie:"Typographie"},exSrc:"Original",exTr:"Traduction",exFix:"Proposition",apply:"Appliquer",applied:"Correction appliquée",
 export:"Exporter",exportScope:"Direction RTL/LTR, police arabe et structure conservées. Le PDF est rendu en image pour garantir la forme des lettres arabes.",layout:"Mise en page",lT:"Traduction seule",lSide:"Bilingue côte à côte",lStack:"Original puis traduction",txt:"Texte (.txt)",saved:"Fichier enregistré",declined:"Enregistrement annulé",dlOff:"Le téléchargement n'est pas disponible dans cette vue.",nothing:"Rien à exporter pour l'instant.",building:"Préparation du fichier…",footer:"Traduction {s} → {t} · Page ",lbOrig:"Original",lbTr:"Traduction",
 eUnavailable:"Le moteur de traduction est injoignable. Réessayez dans un instant.",eNotGranted:"Autorisez cette page à utiliser Claude pour traduire.",eRate:"Trop de demandes en peu de temps. Réessayez dans un moment.",eTooLarge:"Texte trop long pour l'onglet Texte : utilisez l'onglet Document, qui découpe automatiquement.",eRefused:"Ce contenu n'a pas pu être traduit.",eSession:"Votre session a expiré : reconnectez-vous à Claude.",eGeneric:"La traduction a échoué. Réessayez.",eJson:"Le rapport de contrôle n'a pas pu être lu. Relancez le contrôle.",lexTitle:"Projet et lexique",lexScope:"Le lexique du projet prime sur toute autre traduction. Seuls les termes présents dans le texte sont envoyés, pour limiter l'usage.",project:"Projet",noProject:"Aucun (traduction générale)",importedProj:"Lexique importé",lexCount:"{n} termes · {c} conventions",lexImport:"Importer un lexique (.xlsx, .csv)",lexExport:"Exporter le lexique (.xlsx)",lexReset:"Revenir au lexique d'origine",lexResetDone:"Lexique d'origine rétabli",officeNote:"Mode fidèle : le fichier ressortira au même format, avec sa mise en page, ses styles, tableaux et images. Chaque paragraphe reste modifiable après traduction.",doneOffice:"Traduction terminée : {n} paragraphes. Relisez et modifiez si besoin, puis téléchargez.",fileSegs:"{name} · {n} paragraphes",offDl:"Télécharger le fichier traduit",instr:"Consignes du projet",lexBrowse:"Parcourir le lexique ({n} termes)",lexSearch:"Rechercher un terme",colAr:"Terme arabe",colFr:"Français retenu",colNote:"Règle",colCat:"Catégorie",points:"Points à valider",ptProposal:"Proposé",ptAlt:"Alternative",newTerms:"Nouveaux termes à ajouter au lexique",add:"Ajouter",ignore:"Ignorer",added:"Ajouté au lexique",lexImported:"Lexique importé : {n} termes",lexBad:"Aucune colonne de termes reconnue dans ce fichier.",ckLexOk:"Lexique respecté ({n} termes)",ckLex:"Lexique à vérifier : {x}",sep:" : "},
-ar:{ocrBtn:"استخراج النص (OCR)",ocrDone:"تمت قراءة النص: {n} عنصرًا. صحّحه مباشرة أدناه عند الحاجة، ثم ترجمه أو نزّله عبر «تصدير».",ocrMode:"قراءة المستندات الممسوحة",ocrFast:"سريعة (داخل المتصفح، دون اتصال)",ocrAI:"دقيقة (ذكاء OVH، موصى بها للعربية)",ocrFallback:"القراءة بالذكاء الاصطناعي غير متاحة: استُخدمت القراءة السريعة.",engVisionT:"القراءة الدقيقة للمستندات الممسوحة (ذكاء اصطناعي)",noVision:"لا يتوفر نموذج للصور: تُستخدم القراءة السريعة",navSettings:"الإعدادات",homeHelloAnon:"أهلًا بك",savedLocal:"حُفظ على هذا الحاسوب",setRubric:"المحرك والمشاركة",setIntro:"تستخدم الترجمة ذكاءً اصطناعيًا مفتوح المصدر ومجانيًا من OVHcloud، بلا مفتاح ولا حساب. وتتم قراءة المستندات الممسوحة داخل متصفحك.",engExplain:"لكل حاسوب حصته المجانية: طلبان في الدقيقة لكل نموذج. يوزّع الموقع العمل على النماذج ويضعه في قائمة انتظار: يُترجَم المستند الطويل على التوالي دون أخطاء.",engCap:"قدرة هذا الحاسوب: نحو {n} فقرة أو صفحة في الدقيقة.",engModelsT:"النماذج المستخدمة",engAddr:"العنوان:",engTestBtn:"اختبار الترجمة",testing:"جارٍ الاختبار…",testOk:"يعمل ({s} ث، {m}): {r}",stOk:"متاح",stBlocked:"محجوب من المتصفح",stUnknown:"لم يُختبر بعد",stDead:"غير متاح",blockedNote:"يرفض OVH الطلبات الصادرة مباشرة من المتصفح. يلزم عندئذ وسيط: اطلب من المسؤول إعداده.",lexShareT:"مشاركة المسرد",lexShareP:"تُحفظ الإضافات إلى المسرد على هذا الحاسوب. لمشاركتها مع الفريق: المسرد ← تصدير المسرد، ثم يستبدل المسؤول الملف site/data/catechese.json على GitHub.",relayT:"متقدم: وسيط",relayP:"يُستخدم فقط إذا حجب OVH الطلبات من المتصفح، أو لمزوّد آخر متوافق مع OpenAI بلا مفتاح.",relayL:"عنوان الوسيط (متوافق مع OpenAI، ينتهي بـ ‎/v1)",eOvhBlocked:"لا يقبل محرك OVH الطلبات من هذا المتصفح. راجع الإعدادات.",eOvhNoModel:"لا يتوفر أي نموذج OVH حاليًا. حاول لاحقًا.",queueHint:"قائمة انتظار: الحصة المجانية طلبان في الدقيقة لكل نموذج، وتُستأنف الترجمة تلقائيًا.",brandSub:"ترجمة",navHome:"الرئيسية",navLex:"المسرد",navTeam:"الفريق",navAccount:"حسابي",logout:"تسجيل الخروج",
+ar:{bibleCheck:"جارٍ البحث عن الآيات الكتابية…",bibleChip:"{n} شاهدًا كتابيًا تم التحقق منه",bibleFixed:"{n} شاهدًا مُصحَّحًا",refsFixed:"صُحّح {n} شاهدًا كتابيًا بعد القراءة (أرقام معكوسة أو مقروءة خطأ)",ocrBtn:"استخراج النص (OCR)",ocrDone:"تمت قراءة النص: {n} عنصرًا. صحّحه مباشرة أدناه عند الحاجة، ثم ترجمه أو نزّله عبر «تصدير».",ocrMode:"قراءة المستندات الممسوحة",ocrFast:"سريعة (داخل المتصفح، دون اتصال)",ocrAI:"دقيقة (ذكاء OVH، موصى بها للعربية)",ocrFallback:"القراءة بالذكاء الاصطناعي غير متاحة: استُخدمت القراءة السريعة.",engVisionT:"القراءة الدقيقة للمستندات الممسوحة (ذكاء اصطناعي)",noVision:"لا يتوفر نموذج للصور: تُستخدم القراءة السريعة",navSettings:"الإعدادات",homeHelloAnon:"أهلًا بك",savedLocal:"حُفظ على هذا الحاسوب",setRubric:"المحرك والمشاركة",setIntro:"تستخدم الترجمة ذكاءً اصطناعيًا مفتوح المصدر ومجانيًا من OVHcloud، بلا مفتاح ولا حساب. وتتم قراءة المستندات الممسوحة داخل متصفحك.",engExplain:"لكل حاسوب حصته المجانية: طلبان في الدقيقة لكل نموذج. يوزّع الموقع العمل على النماذج ويضعه في قائمة انتظار: يُترجَم المستند الطويل على التوالي دون أخطاء.",engCap:"قدرة هذا الحاسوب: نحو {n} فقرة أو صفحة في الدقيقة.",engModelsT:"النماذج المستخدمة",engAddr:"العنوان:",engTestBtn:"اختبار الترجمة",testing:"جارٍ الاختبار…",testOk:"يعمل ({s} ث، {m}): {r}",stOk:"متاح",stBlocked:"محجوب من المتصفح",stUnknown:"لم يُختبر بعد",stDead:"غير متاح",blockedNote:"يرفض OVH الطلبات الصادرة مباشرة من المتصفح. يلزم عندئذ وسيط: اطلب من المسؤول إعداده.",lexShareT:"مشاركة المسرد",lexShareP:"تُحفظ الإضافات إلى المسرد على هذا الحاسوب. لمشاركتها مع الفريق: المسرد ← تصدير المسرد، ثم يستبدل المسؤول الملف site/data/catechese.json على GitHub.",relayT:"متقدم: وسيط",relayP:"يُستخدم فقط إذا حجب OVH الطلبات من المتصفح، أو لمزوّد آخر متوافق مع OpenAI بلا مفتاح.",relayL:"عنوان الوسيط (متوافق مع OpenAI، ينتهي بـ ‎/v1)",eOvhBlocked:"لا يقبل محرك OVH الطلبات من هذا المتصفح. راجع الإعدادات.",eOvhNoModel:"لا يتوفر أي نموذج OVH حاليًا. حاول لاحقًا.",queueHint:"قائمة انتظار: الحصة المجانية طلبان في الدقيقة لكل نموذج، وتُستأنف الترجمة تلقائيًا.",brandSub:"ترجمة",navHome:"الرئيسية",navLex:"المسرد",navTeam:"الفريق",navAccount:"حسابي",logout:"تسجيل الخروج",
 loginSide:"خدمة الترجمة في الكنيسة · العربية ↔ الفرنسية وأكثر من 80 لغة",lgUser:"اسم المستخدم",lgPass:"كلمة المرور",lgPass2:"تأكيد كلمة المرور",lgGo:"تسجيل الدخول",lgSetupGo:"إنشاء حساب المسؤول",lgTitle:"تسجيل الدخول",lgSetupTitle:"أهلًا بك",lgIntro:"استخدم اسم المستخدم الذي أعطاك إياه المسؤول.",lgSetupIntro:"الموقع جديد: أنشئ حساب المسؤول، ثم أضف المترجمين.",lgRubric:"SMSM للترجمة",lgBad:"اسم المستخدم أو كلمة المرور غير صحيحة.",lgWait:"محاولات كثيرة. انتظر 15 دقيقة.",lgMismatch:"كلمتا المرور غير متطابقتين.",lgShort:"اسم المستخدم: أحرف لاتينية صغيرة وأرقام و . _ - ؛ كلمة المرور: 10 أحرف على الأقل.",
 homeHello:"مرحبًا {u}",homeIntro:"أفلت مستندًا أو الصق نصًا: يُترجَم وفق مسرد الإيبارشية، ثم تراجعه قبل التنزيل.",homeFolio:"مثال على ترجمة معتمدة",homeLex:"{n} مصطلحًا في المسرد",actDocT:"ترجمة مستند",actDocP:"تخرج ملفات وورد وباوربوينت وإكسل بالتنسيق نفسه، وكذلك ملفات PDF والمستندات الممسوحة.",actTextT:"ترجمة نص",actTextP:"الصق مقطعًا أو إعلانًا أو رسالة وصحّح النتيجة مباشرة.",
 pr1:"أفلت الملف",pr1d:"ملف وورد أو باوربوينت أو إكسل أو PDF أو صورة.",pr2:"اضبط",pr2d:"اللغتان والمجال؛ ويُطبَّق مسرد المشروع تلقائيًا.",pr3:"راجع",pr3d:"صحّح كل فقرة واعتمد النقاط المُشار إليها.",pr4:"نزّل",pr4d:"يخرج الملف بصيغته الأصلية، جاهزًا للطباعة.",
@@ -594,7 +594,8 @@ function matchGlossary(text){
   for(const it of items){let found=false;t=t.replace(termRe(it.v,ar),m=>{found=true;return m.replace(/\p{L}/gu," ")});if(found)hit.add(it.i)}
   return[...hit].map(i=>p.lex[i]);
 }
-function projectBlock(text){
+function projectBlock(text){return projectBlockBase(text)+bibleBlock(text)}
+function projectBlockBase(text){
   const p=proj();if(p.id==="none")return"";let s="";
   if(p.instr.trim())s+=`\nProject instructions from the client (follow them; the output format given at the end replaces any format they mention, and points to validate go in @@EXTRA, never inline):\n${p.instr.trim()}\n`;
   const g=matchGlossary(text);
@@ -765,6 +766,7 @@ function normLang(c){c=c.toLowerCase();if(LMAP[c])return c;if(c==="ku")return"ck
 /* ---------- text translation ---------- */
 async function translateText(){
   const src=$("#srcText").value.trim();if(!src)return;
+  setStatus(T("bibleCheck"));await prepareBible(src);setStatus("");
   if(!sample){setStatus(T("eUnavailable"),"bad");return}
   if(src.length>15000){setStatus(T("eTooLarge"),"bad");return}
   if(S.src==="auto"&&S.tgt==="ar"&&arRatio(src)>.4){S.tgt="fr";$("#tgtSel").value="fr";toast(T("switched"))}
@@ -805,7 +807,7 @@ function currentPair(){
 function blockText(node){let s="";node.childNodes.forEach(n=>{if(n.nodeType===3)s+=n.nodeValue;else if(n.nodeType===1){const tg=n.tagName;const inner=blockText(n);if(/^(P|H\d|LI|TR|DIV|BLOCKQUOTE)$/.test(tg))s+=inner.trim()+"\n";else if(tg==="TD"||tg==="TH")s+=inner.trim()+" | ";else if(tg==="BR")s+="\n";else s+=inner}});return s.replace(/\n{3,}/g,"\n\n")}
 function renderChecks(){
   const p=currentPair();const el=$("#checks");
-  const ck=localChecks(p.src,p.tr,p.missing);const lc=p.src&&p.tr?lexCheck(p.src,p.tr):null;if(lc)ck.push(lc);
+  const ck=localChecks(p.src,p.tr,p.missing);if(p.tr&&BIB&&BIB.refs.length){const ch=BIB.refs.filter(r=>r.changed).length;ck.push([ch?"warn":"ok",T("bibleChip",{n:BIB.refs.length})+(ch?" · "+T("bibleFixed",{n:ch}):"")])}const lc=p.src&&p.tr?lexCheck(p.src,p.tr):null;if(lc)ck.push(lc);
   el.innerHTML=ck.map(([k,m])=>`<span class="chip ${k}">${esc(m)}</span>`).join("");
   renderQc();
 }
@@ -991,7 +993,8 @@ async function tesseractOcr(signal){
   }finally{w.terminate().catch(()=>{})}
   d.blocks=blockify(html);d.ocr=false;autoTarget();
 }
-async function runOcr(signal){
+async function runOcr(signal){await runOcrRaw(signal);try{await fixOcrRefs()}catch(e){}}
+async function runOcrRaw(signal){
   const d=S.doc;if(!imgMax||S.ocrMode!=="ai")return tesseractOcr(signal);
   try{return await aiOcr(signal)}catch(e){if(e&&e.code==="cancelled")throw e;toast(T("ocrFallback"));return tesseractOcr(signal)}
 }
@@ -1022,6 +1025,7 @@ No code fences, no <html> or <body>, no explanation.`;
 }
 
 /* ---------- documents: translation ---------- */
+function parallel(){return Math.min(8,Math.max(2,(ENG.models.filter(m=>!ENG.dead.has(m)).length)*2))}
 function makeChunks(blocks,only){
   const chunks=[];let cur=null;
   blocks.forEach((h,i)=>{if(only&&!only.has(i))return;const tagged=h.replace(/^<([a-z0-9]+)/i,`<$1 data-b="${i}"`);
@@ -1035,6 +1039,7 @@ async function translateDoc(retryOnly){
   docCtl?.abort();const ctl=docCtl=new AbortController();busyDoc(true);S.qc=null;$("#qcOut").innerHTML="";
   try{
     if(d.ocr){await runOcr(ctl.signal);renderDoc()}
+    await prepareBible(d.blocks.join("\n").replace(/<[^>]+>/g," "));
     const only=retryOnly?new Set(d.tblocks.map((b,i)=>(!b||b.missing)?i:-1).filter(i=>i>=0)):null;
     if(!retryOnly){d.tblocks=new Array(d.blocks.length).fill(null);S.extra.doc={points:[],terms:[]}}
     d.done=false;
@@ -1056,7 +1061,7 @@ async function translateDoc(retryOnly){
       }
       done++;prog(base+(1-base)*done/chunks.length);if(!stop)docMsg(T("progress",{a:Math.min(done+1,chunks.length),b:chunks.length}));renderDoc();
     };
-    let idx=0;const runners=[0,1].map(async()=>{while(idx<chunks.length&&!stop){const ch=chunks[idx++];await work(ch)}});
+    let idx=0;const runners=Array.from({length:parallel()},async()=>{while(idx<chunks.length&&!stop){const ch=chunks[idx++];await work(ch)}});
     await Promise.all(runners);
     d.tblocks=d.tblocks.map((b,i)=>b||{html:d.blocks[i],missing:true});
     d.done=true;
@@ -1132,6 +1137,7 @@ ${extraFormat()}
 ${chunk.map(s=>`<s id="${s.id}">${s.src}</s>`).join("\n")}`}
 async function translateOffice(retryOnly){
   const d=S.doc;const segs=OFF.segs;
+  await prepareBible(segs.map(x=>x.text).join("\n"));
   docCtl?.abort();const ctl=docCtl=new AbortController();busyDoc(true);S.qc=null;$("#qcOut").innerHTML="";
   if(!retryOnly){segs.forEach(s=>{s.tr=null;s.edited=null;s.missing=false});S.extra.doc={points:[],terms:[]};d.detected=null}
   d.done=false;
@@ -1152,7 +1158,7 @@ async function translateOffice(retryOnly){
       done++;prog(done/chunks.length);if(!stop)docMsg(T("progress",{a:Math.min(done+1,chunks.length),b:chunks.length}));
       segs.forEach(s=>{const k=seen.get(s.src);if(k!=null&&out.has(k)){s.tr=out.get(k);s.missing=false}});renderDoc();
     };
-    let idx=0;await Promise.all([0,1].map(async()=>{while(idx<chunks.length&&!stop)await work(chunks[idx++])}));
+    let idx=0;await Promise.all(Array.from({length:parallel()},async()=>{while(idx<chunks.length&&!stop)await work(chunks[idx++])}));
     segs.forEach(s=>{if(!s.tr){s.missing=true}});
     d.done=true;
     const miss=segs.filter(s=>s.missing).length;
@@ -1473,12 +1479,152 @@ $("#srcText").value=EX_SRC;
 applyUI();
 /* ---------- engine client (server streaming) ---------- */
 function blobToDataUrl(b){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(b)})}
+/* ---------- Bible : versets reconnus et cités exactement ----------
+   Français : Louis Segond 1910 (légèrement modernisée selon les conventions du projet).
+   Arabe : Van Dyck (Smith-Van Dyck 1865). Domaine public.
+   Les références sont lues dans le texte source ; quand une citation accompagne la référence,
+   elle est comparée au texte biblique pour corriger les numéros inversés ou mal lus par l'OCR. */
+// [OSIS, abréviation française, abréviations arabes (la 1re sert à l'écriture), noms complets arabes, noms français]
+const BOOKS=[
+["Gen","Gn","تك","تكوين","Genèse|Gen"],["Exod","Ex","خر","خروج","Exode"],["Lev","Lv","لا","لاويين","Lévitique|Lev"],["Num","Nb","عد","عدد","Nombres|Nomb"],["Deut","Dt","تث","تثنية","Deutéronome|Deut"],
+["Josh","Jos","يش","يشوع","Josué"],["Judg","Jg","قض","قضاة","Juges"],["Ruth","Rt","را","راعوث","Ruth"],["1Sam","1 S","١صم","صموئيل الأول","1 Samuel|1 Sam|1S"],["2Sam","2 S","٢صم","صموئيل الثاني","2 Samuel|2 Sam|2S"],
+["1Kgs","1 R","١مل","الملوك الأول","1 Rois|1R"],["2Kgs","2 R","٢مل","الملوك الثاني","2 Rois|2R"],["1Chr","1 Ch","١أخ","أخبار الأيام الأول","1 Chroniques|1 Chr|1Ch"],["2Chr","2 Ch","٢أخ","أخبار الأيام الثاني","2 Chroniques|2 Chr|2Ch"],
+["Ezra","Esd","عز","عزرا","Esdras"],["Neh","Ne","نح","نحميا","Néhémie|Neh|Né"],["Esth","Est","أس|اس","أستير","Esther"],["Job","Jb","أي|اي","أيوب","Job"],["Ps","Ps","مز","مزمور|مزامير","Psaume|Psaumes|Ps"],
+["Prov","Pr","أم|ام","أمثال","Proverbes|Prov"],["Eccl","Qo","جا","جامعة","Ecclésiaste|Qohélet|Ec|Eccl"],["Song","Ct","نش","نشيد الأنشاد","Cantique des cantiques|Cantique|Ct"],["Isa","Is","إش|اش","إشعياء","Isaïe|Esaïe|Es"],
+["Jer","Jr","إر|ار","إرميا","Jérémie|Jer"],["Lam","Lm","مرا","مراثي","Lamentations|Lam"],["Ezek","Ez","حز","حزقيال","Ézéchiel|Ezéchiel|Ezechiel|Éz"],["Dan","Dn","دا","دانيال","Daniel|Dan"],["Hos","Os","هو","هوشع","Osée|Os"],
+["Joel","Jl","يؤ","يوئيل","Joël|Joel"],["Amos","Am","عا","عاموس","Amos"],["Obad","Ab","عو","عوبديا","Abdias"],["Jonah","Jon","يون","يونان","Jonas"],["Mic","Mi","مي","ميخا","Michée"],["Nah","Na","نا","ناحوم","Nahum"],
+["Hab","Ha","حب","حبقوق","Habacuc"],["Zeph","So","صف","صفنيا","Sophonie"],["Hag","Ag","حج","حجي","Aggée"],["Zech","Za","زك","زكريا","Zacharie"],["Mal","Ml","ملا","ملاخي","Malachie"],
+["Matt","Mt","مت","متى","Matthieu|Matt"],["Mark","Mc","مر","مرقس","Marc|Mr"],["Luke","Lc","لو","لوقا","Luc|Lu"],["John","Jn","يو","يوحنا","Jean|Jea"],["Acts","Ac","أع|اع","أعمال الرسل|أعمال","Actes"],
+["Rom","Rm","رو","رومية","Romains|Rom|Ro"],["1Cor","1 Co","١كو","كورنثوس الأولى","1 Corinthiens|1 Cor|1Co"],["2Cor","2 Co","٢كو","كورنثوس الثانية","2 Corinthiens|2 Cor|2Co"],["Gal","Ga","غل","غلاطية","Galates|Gal"],
+["Eph","Ep","أف|اف","أفسس","Éphésiens|Ephésiens|Eph|Ép"],["Phil","Ph","في","فيلبي","Philippiens|Phil"],["Col","Col","كو","كولوسي","Colossiens"],["1Thess","1 Th","١تس","تسالونيكي الأولى","1 Thessaloniciens|1 Thess|1Th"],
+["2Thess","2 Th","٢تس","تسالونيكي الثانية","2 Thessaloniciens|2 Thess|2Th"],["1Tim","1 Tm","١تي","تيموثاوس الأولى","1 Timothée|1 Tim|1Tm"],["2Tim","2 Tm","٢تي","تيموثاوس الثانية","2 Timothée|2 Tim|2Tm"],
+["Titus","Tt","تي","تيطس","Tite"],["Phlm","Phm","فل","فليمون","Philémon"],["Heb","He","عب","العبرانيين|عبرانيين","Hébreux|Heb|Hé"],["Jas","Jc","يع","يعقوب","Jacques|Jac"],
+["1Pet","1 P","١بط","بطرس الأولى","1 Pierre|1 Pi|1P"],["2Pet","2 P","٢بط","بطرس الثانية","2 Pierre|2 Pi|2P"],["1John","1 Jn","١يو","يوحنا الأولى","1 Jean|1Jn"],["2John","2 Jn","٢يو","يوحنا الثانية","2 Jean|2Jn"],
+["3John","3 Jn","٣يو","يوحنا الثالثة","3 Jean|3Jn"],["Jude","Jude","يه","يهوذا","Jude"],["Rev","Ap","رؤ","رؤيا","Apocalypse|Apoc"]];
+// Psaumes : la Bible Van Dyck ne compte pas les titres comme versets, Segond oui (ex. Ps 51, 16 Van Dyck = Ps 51, 18 Segond)
+const PS_OFF={51:2,52:2,54:2,60:2};[3,4,5,6,7,8,9,12,13,18,19,20,21,22,30,31,34,36,38,39,40,41,42,44,45,46,47,48,49,53,55,56,57,58,59,61,62,63,64,65,67,68,69,70,75,76,77,80,81,83,84,85,88,89,92,102,108,140,142].forEach(n=>PS_OFF[n]=1);
+var BIB={lsg:null,svd:null,svdN:null,lsgN:null,refs:[]};
+const DIG=s=>String(s).replace(/[٠-٩]/g,d=>d.charCodeAt(0)-0x660).replace(/[۰-۹]/g,d=>d.charCodeAt(0)-0x6F0);
+const toArDig=n=>String(n).replace(/\d/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]);
+const bookBy=o=>BOOKS.find(b=>b[0]===o);
+function arWords(t){return normAr(t).replace(/ة/g,"ه").replace(/[^ء-ي\s]/g," ").split(/\s+/).map(w=>w.replace(/^(وال|بال|فال|كال|لل|ال|و)(?=..)/,"")).filter(w=>w.length>1)}
+function frWords(t){return normLat(t).replace(/[^a-z\s]/g," ").split(/\s+/).filter(w=>w.length>2)}
+async function loadBible(lang){
+  const key=lang==="ar"?"svd":"lsg";if(BIB[key])return BIB[key];
+  const r=await fetch(`data/bible-${key}.json`);BIB[key]=await r.json();return BIB[key];
+}
+function verseText(bible,osis,c,v,v2){const ch=bible[osis]&&bible[osis][c-1];if(!ch||!ch[v-1])return null;return ch.slice(v-1,Math.min(ch.length,v2||v)).join(" ")}
+function exists(bible,osis,c,v){return !!(bible[osis]&&bible[osis][c-1]&&bible[osis][c-1][v-1])}
+function modernLSG(t){
+  return t.replace(/\bde l’Eternel\b/g,"du Seigneur").replace(/\bà l’Eternel\b/g,"au Seigneur").replace(/\bL’Eternel\b/g,"Le Seigneur").replace(/\bl’Eternel\b/g,"le Seigneur").replace(/\bEternel\b/g,"Seigneur")
+    .replace(/souverains? sacrificateurs?/g,m=>m.startsWith("souverains")?"grands prêtres":"grand prêtre").replace(/\bsacrificateurs\b/g,"prêtres").replace(/\bsacrificateur\b/g,"prêtre");
+}
+// repérage des références dans le texte source
+let REF_RE=null;
+function refRegexes(){
+  if(REF_RE)return REF_RE;
+  const esc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  const ar=[],fr=[];
+  BOOKS.forEach(b=>{b[2].split("|").forEach(a=>ar.push([a,b[0]]));b[3].split("|").forEach(a=>ar.push([a,b[0]]));b[4].split("|").forEach(a=>fr.push([a,b[0]]));fr.push([b[1],b[0]])});
+  // abréviations arabes sans chiffre initial : "كو" (Colossiens) etc. ; les livres numérotés acceptent "1كو", "١ كو", "كو1"
+  const arAlt=[...new Set(ar.map(x=>x[0].replace(/^[١٢٣]/,"")))].sort((a,b)=>b.length-a.length).map(esc).join("|");
+  const frAlt=[...new Set(fr.map(x=>x[0]))].sort((a,b)=>b.length-a.length).map(x=>esc(x).replace(/\\? /g,"\\s?")).join("|");
+  const N="[0-9٠-٩]{1,3}";
+  REF_RE={ar,fr,
+    arA:new RegExp(`(?:([123١٢٣])\\s*)?(${arAlt})\\s*\\.?\\s*(${N})\\s*[:：/؛]\\s*(${N})(?:\\s*[-–]\\s*(${N}))?`,"g"),
+    arB:new RegExp(`(${N})\\s*[:：/؛]\\s*(${N})(?:\\s*[-–]\\s*(${N}))?\\s*(?:([123١٢٣])\\s*)?(${arAlt})(?![\\u0621-\\u064A])`,"g"),
+    frA:new RegExp(`(?<![\\p{L}])(${frAlt})\\.?\\s*(\\d{1,3})\\s*[,:.]\\s*(\\d{1,3})(?:\\s*[-–]\\s*(\\d{1,3}))?`,"gu")};
+  return REF_RE;
+}
+function arBook(num,abbr){
+  const n=num?DIG(num):"";const R=refRegexes();
+  const hit=R.ar.find(([a])=>a===(n?"١٢٣"[+n-1]:"")+abbr)||R.ar.find(([a])=>a===abbr);
+  return hit?hit[1]:null;
+}
+function findRefs(text,lang){
+  const R=refRegexes();const out=[];let m;
+  if(lang==="ar"){
+    R.arA.lastIndex=0;while((m=R.arA.exec(text))){const osis=arBook(m[1],m[2]);if(osis)out.push({raw:m[0],index:m.index,osis,a:+DIG(m[3]),b:+DIG(m[4]),c:m[5]?+DIG(m[5]):0})}
+    R.arB.lastIndex=0;while((m=R.arB.exec(text))){if(out.some(o=>Math.abs(o.index-m.index)<6))continue;const osis=arBook(m[4],m[5]);if(osis)out.push({raw:m[0],index:m.index,osis,a:+DIG(m[1]),b:+DIG(m[2]),c:m[3]?+DIG(m[3]):0,reversed:true})}
+  }else{
+    R.frA.lastIndex=0;while((m=R.frA.exec(text))){const hit=R.fr.find(([a])=>normLat(a).replace(/\s/g,"")===normLat(m[1]).replace(/\s/g,""));if(hit){const off=hit[1]==="Ps"?(PS_OFF[+m[2]]||0):0;out.push({raw:m[0],index:m.index,osis:hit[1],a:+m[2],b:Math.max(1,+m[3]-off),c:m[4]?Math.max(1,+m[4]-off):0})}}
+  }
+  return out.sort((x,y)=>x.index-y.index);
+}
+// la citation qui précède la référence (entre guillemets si possible)
+function quoteBefore(text,ref,prevEnd){
+  const from=Math.max(prevEnd,ref.index-600);let seg=text.slice(from,ref.index).replace(/[(\[]\s*$/,"");
+  const q=Math.max(seg.lastIndexOf("«"),seg.lastIndexOf("“"),seg.lastIndexOf('"'),seg.lastIndexOf("„"));
+  if(q>=0&&seg.length-q>8)seg=seg.slice(q+1);else{const s=Math.max(seg.lastIndexOf("\n"),seg.lastIndexOf(". "),seg.lastIndexOf("؟"),seg.lastIndexOf("!"));if(s>=0)seg=seg.slice(s+1)}
+  return seg.replace(/[«»“”"„]/g,"").trim();
+}
+function score(qw,text,words){if(!qw.length||!text)return 0;const set=new Set(words(text));let hit=0;qw.forEach(w=>{if(set.has(w))hit++});return hit/qw.length}
+function resolveRef(ref,quote,lang,bible){
+  const words=lang==="ar"?arWords:frWords;const qw=words(quote);const canMatch=qw.length>=4;
+  const span=r=>r.c&&r.c>r.v?r.c:r.v;
+  const cands=[{c:ref.a,v:ref.b,v2:ref.c||0,swap:false},{c:ref.b,v:ref.a,v2:0,swap:true}].filter(x=>exists(bible,ref.osis,x.c,x.v));
+  let best=null;
+  for(const x of cands){const t=verseText(bible,ref.osis,x.c,x.v,Math.max(x.v2||x.v,x.v+2));const s=canMatch?score(qw,t,words):0;if(!best||s>best.s)best={...x,osis:ref.osis,s}}
+  if(canMatch&&(!best||best.s<.5)){
+    // recherche dans tout le livre, puis dans toute la Bible (numéros mal lus par l'OCR)
+    const scan=osisList=>{let b=null;for(const o of osisList){const bk=bible[o];if(!bk)continue;bk.forEach((ch,ci)=>ch.forEach((_,vi)=>{const t=ch.slice(vi,vi+2).join(" ");const s=score(qw,t,words);if(!b||s>b.s)b={osis:o,c:ci+1,v:vi+1,v2:0,s,moved:true}}))}return b};
+    let b=scan([ref.osis]);if(!b||b.s<.6){const all=scan(Object.keys(bible));if(all&&(!b||all.s>b.s))b=all}
+    if(b&&b.s>=.6&&(!best||b.s>best.s+.1))best=b;
+  }
+  if(!best)return null;
+  // longueur réelle de la citation : on étend tant que les mots de la citation sont couverts
+  if(canMatch&&!best.v2){let end=best.v,cur=score(qw,verseText(bible,best.osis,best.c,best.v),words);for(let k=1;k<=4;k++){const s=score(qw,verseText(bible,best.osis,best.c,best.v,best.v+k),words);if(s>cur+.08){cur=s;end=best.v+k}else break}if(end>best.v)best.v2=end}
+  best.verified=canMatch&&best.s>=.5;best.changed=best.c!==ref.a||best.v!==ref.b||best.osis!==ref.osis;
+  return best;
+}
+function frRef(x){const bk=bookBy(x.osis);const off=x.osis==="Ps"?(PS_OFF[x.c]||0):0;return `${bk[1]} ${x.c}, ${x.v+off}${x.v2&&x.v2!==x.v?"-"+(x.v2+off):""}`}
+function arRef(x){const bk=bookBy(x.osis);return `${bk[2].split("|")[0]} ${toArDig(x.c)}: ${toArDig(x.v)}${x.v2&&x.v2!==x.v?"-"+toArDig(x.v2):""}`}
+// analyse complète d'un texte source avant traduction
+async function prepareBible(text){
+  BIB.refs=[];
+  try{
+    const lang=S.src==="auto"?(arRatio(text)>.4?"ar":"fr"):S.src;if(lang!=="ar"&&lang!=="fr")return;
+    const refs=findRefs(text,lang);if(!refs.length)return;
+    const src=await loadBible(lang);
+    const tgtLang=S.tgt==="fr"||S.tgt==="ar"?S.tgt:null;const tgt=tgtLang?await loadBible(tgtLang):null;
+    let prevEnd=0;
+    for(const r of refs){
+      const q=quoteBefore(text,r,prevEnd);prevEnd=r.index+r.raw.length;
+      const x=resolveRef(r,q,lang,src);if(!x)continue;
+      const ref=tgtLang==="fr"?frRef(x):tgtLang==="ar"?arRef(x):`${x.osis} ${x.c}:${x.v}`;
+      let vt=tgt?verseText(tgt,x.osis,x.c,x.v,x.v2):null;if(vt&&tgtLang==="fr")vt=modernLSG(vt);
+      BIB.refs.push({raw:r.raw.trim(),ref,text:vt,verified:x.verified,changed:x.changed,quoted:q.length>15});
+    }
+  }catch(e){BIB.refs=[]}
+}
+function bibleBlock(chunk){
+  const list=BIB.refs.filter(r=>chunk.includes(r.raw));if(!list.length)return"";
+  const ver=S.tgt==="ar"?"Smith-Van Dyck Arabic Bible":"Louis Segond 1910 (with the project's modernisations)";
+  return `\nBible references found in this text, checked against the Bible (source of truth):\n`+list.map(r=>`- Source writes "${r.raw}" → write the reference exactly as: ${r.ref}${r.changed?" (the source numbers were wrong or inverted; use this corrected reference)":""}${r.text&&r.quoted?`. If the source quotes this verse, use exactly this ${ver} text for the quotation instead of translating it (you may leave out words the source does not quote, never rephrase): «${r.text}»`:""}`).join("\n")+"\n";
+}
+// après l'OCR : corrige dans le texte lu les références inversées ou mal lues
+async function fixOcrRefs(){
+  const d=S.doc;if(!d.blocks.length)return 0;
+  const plain=d.blocks.map(h=>h.replace(/<[^>]+>/g," ")).join("\n");
+  const lang=arRatio(plain)>.4?"ar":"fr";
+  const refs=findRefs(plain,lang);if(!refs.length)return 0;
+  const bible=await loadBible(lang);let fixed=0,prevEnd=0;
+  for(const r of refs){
+    const q=quoteBefore(plain,r,prevEnd);prevEnd=r.index+r.raw.length;
+    const x=resolveRef(r,q,lang,bible);if(!x||!x.verified||!x.changed)continue;
+    const rep=lang==="ar"?arRef(x):frRef(x);
+    for(let i=0;i<d.blocks.length;i++){if(d.blocks[i].includes(r.raw.trim())){d.blocks[i]=d.blocks[i].replace(r.raw.trim(),rep);fixed++;break}}
+  }
+  if(fixed)toast(T("refsFixed",{n:fixed}));
+  return fixed;
+}
+
 /* ---------- moteur : OVHcloud AI Endpoints, gratuit et sans clé, appelé depuis le navigateur ----------
    Quota anonyme OVH : 2 requêtes par minute, par adresse IP et par modèle.
    Les requêtes sont mises en file d'attente et réparties sur tous les modèles disponibles :
    un long document se traduit à la suite, sans erreur de quota. */
 var OVH_DEFAULT="https://oai.endpoints.kepler.ai.cloud.ovh.net/v1";
-var ENG={base:OVH_DEFAULT,models:["gpt-oss-120b","Meta-Llama-3_3-70B-Instruct","Mistral-Small-3.2-24B-Instruct-2506","Qwen3-32B"],uses:{},cool:{},dead:new Set(),status:"unknown",last:null,vision:[]};
+var ENG={base:OVH_DEFAULT,models:["gpt-oss-120b","Meta-Llama-3_3-70B-Instruct","Mistral-Small-3.2-24B-Instruct-2506","Qwen3-32B"],uses:{},cool:{},dead:new Set(),status:"unknown",last:null,vision:[],noExtra:new Set()};
 try{const r=localStorage.getItem("smsm.relay");if(r)ENG.base=r.replace(/\/+$/,"")}catch(e){}
 const PREF=[/gpt-oss-120b/i,/llama-3_3-70b/i,/qwen3/i,/mistral-small/i,/llama/i,/mistral/i,/qwen/i,/gpt-oss/i];
 const rank=id=>{const i=PREF.findIndex(r=>r.test(id));return i<0?99:i};
@@ -1523,8 +1669,10 @@ function noThink(t){return t.replace(/<think>[\s\S]*?(<\/think>|$)/g,"").replace
 function blobToDataUrl(b){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(b)})}
 async function ovhOnce(input,opts,model){
   let r;
-  try{r=await fetch(ENG.base+"/chat/completions",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:true,max_tokens:8000,temperature:0.2,messages:[{role:"user",content:input}]}),signal:opts.signal})}
+  const extra=ENG.noExtra.has(model)?{}:/gpt-oss/i.test(model)?{reasoning_effort:"low"}:/qwen3/i.test(model)?{chat_template_kwargs:{enable_thinking:false}}:{};
+  try{r=await fetch(ENG.base+"/chat/completions",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({model,stream:true,max_tokens:8000,temperature:0.2,messages:[{role:"user",content:input}],...extra}),signal:opts.signal})}
   catch(e){if(opts.signal&&opts.signal.aborted)throw{code:"cancelled"};ENG.status="blocked";renderSettings();throw{code:"ovh_blocked"}}
+  if((r.status===400||r.status===422)&&Object.keys(extra).length){ENG.noExtra.add(model);ENG.uses[model]=(ENG.uses[model]||[]).slice(0,-1);throw{code:"retry"}}
   if(r.status===404||r.status===400||r.status===422){ENG.dead.add(model);throw{code:"retry"}}
   if(r.status===413)throw{code:"prompt_too_large"};
   if(r.status===429){ENG.cool[model]=Date.now()+30000;throw{code:"retry"}}
