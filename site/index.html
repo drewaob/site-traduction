@@ -1033,7 +1033,7 @@ No code fences, no <html> or <body>, no explanation.`;
 }
 
 /* ---------- documents: translation ---------- */
-function textModels(){const live=ENG.models.filter(m=>!ENG.dead.has(m));const f=live.filter(m=>ENG.baseOf[m]);
+function textModels(){const live=ENG.models.filter(m=>!ENG.dead.has(m));const f=live.filter(m=>ENG.baseOf[m]&&!((ENG.cool[m]||0)>Date.now()+60000));
   if(f.length)return ENG.quality==="fast"?live:f.slice(0,ENG.quality==="balanced"?3:2);const n=ENG.quality==="fast"?live.length:ENG.quality==="balanced"?3:2;return live.slice(0,Math.max(1,n))}
 function parallel(){return Math.min(8,Math.max(2,textModels().reduce((a,m)=>a+(ENG.baseOf[m]?4:2),0)))}
 function makeChunks(blocks,only,max=7500){
@@ -1709,7 +1709,7 @@ async function discoverFast(){
   try{
     const cfg=await (await fetch("data/config.json",{cache:"no-cache"})).json();const base=(cfg.fastRelay||"").replace(/\/+$/,"");if(!base)return;
     const j=await (await fetch(base+"/models")).json();const ms=(j.data||[]).filter(m=>m&&m.id);if(!ms.length)return;
-    ms.forEach(m=>{ENG.baseOf[m.id]=base;ENG.limitOf[m.id]=30});
+    ms.forEach(m=>{ENG.baseOf[m.id]=base;ENG.limitOf[m.id]=Math.max(1,+m.rpm||10)});
     ENG.models=[...ms.map(m=>m.id),...ENG.models.filter(id=>!ENG.baseOf[id])];
     ENG.vision=[...ms.filter(m=>m.vision).map(m=>m.id),...ENG.vision.filter(id=>!ENG.baseOf[id])];
     imgMax=ENG.vision.length?1:0;if(!S.ocrMode&&imgMax)S.ocrMode="ai";ENG.fast=true;ENG.status="ok";
