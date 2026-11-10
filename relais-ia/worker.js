@@ -27,7 +27,7 @@ const PROVIDERS = {
     key: "GROQ_KEY", base: "https://api.groq.com/openai/v1",
     pick(ids) {
       return ids.filter(i => !BAD.test(i) && /(llama|qwen|gpt-oss|kimi|deepseek|mistral|gemma|maverick|scout)/i.test(i) && size(i) >= 17)
-        .map(i => ({ id: i, vision: /(llama-4|maverick|scout)/i.test(i), rpm: 28 }));
+        .map(i => ({ id: i, vision: /(llama-4|maverick|scout)/i.test(i), rpm: 1 })); // quota gratuit en tokens (8-12k/min) : ~1 passage/min
     },
   },
   openrouter: {
